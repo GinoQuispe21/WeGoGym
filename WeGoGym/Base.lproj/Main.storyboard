@@ -173,10 +173,10 @@ inicia sesión o registrate</string>
             </objects>
             <point key="canvasLocation" x="2666.4122137404579" y="91.549295774647888"/>
         </scene>
-        <!--View Controller-->
+        <!--First Screen View Controller-->
         <scene sceneID="pdt-NJ-40L">
             <objects>
-                <viewController id="pA7-Z1-Aja" sceneMemberID="viewController">
+                <viewController id="pA7-Z1-Aja" customClass="FirstScreenViewController" customModule="WeGoGym" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bIu-x7-eVK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,6 +230,9 @@ inicia sesión o registrate</string>
                                     </attributedString>
                                     <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signInValidate:" destination="pA7-Z1-Aja" eventType="touchUpInside" id="CcC-b4-5kq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Regístrate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REG-ka-yGH">
                                 <rect key="frame" x="236" y="764" width="108" height="32"/>
@@ -258,10 +261,38 @@ inicia sesión o registrate</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="72V-1U-l2X"/>
+                    <connections>
+                        <segue destination="ZVE-9A-KfP" kind="show" identifier="signInValidateSegue" id="gdX-h6-Y8x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYQ-zU-NX7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2678.6259541984732" y="-565.49295774647885"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mr3-dd-fWf">
+            <objects>
+                <viewController id="ZVE-9A-KfP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G4D-M6-fUo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXg-1Y-JNU">
+                                <rect key="frame" x="34" y="83" width="132" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.93435472249999996" green="0.49033868310000001" blue="0.188110739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zlr-ii-rbI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mNJ-DK-Nbx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5Y-4t-8gA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3487.7862595419847" y="-565.49295774647885"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="moJ-eP-J1Y">
