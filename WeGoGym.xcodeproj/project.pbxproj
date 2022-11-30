@@ -13,7 +13,12 @@
 		7E0042F3293159BF006157AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0042F1293159BF006157AD /* Main.storyboard */; };
 		7E0042F5293159C1006157AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0042F4293159C1006157AD /* Assets.xcassets */; };
 		7E0042F8293159C1006157AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0042F6293159C1006157AD /* LaunchScreen.storyboard */; };
-		7E938D6729353539001DCD6F /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E938D6629353539001DCD6F /* FirstScreenViewController.swift */; };
+		7E1F6E6E2936D33F00D0A224 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E6D2936D33F00D0A224 /* ProfileViewController.swift */; };
+		7E1F6E702936D6C700D0A224 /* ProfileOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E6F2936D6C700D0A224 /* ProfileOptions.swift */; };
+		7E1F6E722936D89100D0A224 /* ProfileOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */; };
+		7E938D6729353539001DCD6F /* SignInScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E938D6629353539001DCD6F /* SignInScreenViewController.swift */; };
+		7EE4769E29369B0400C3DC07 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */; };
+		7EE476A229369F3F00C3DC07 /* ObjectivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +30,12 @@
 		7E0042F4293159C1006157AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0042F7293159C1006157AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E0042F9293159C1006157AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E938D6629353539001DCD6F /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		7E1F6E6D2936D33F00D0A224 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7E1F6E6F2936D6C700D0A224 /* ProfileOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptions.swift; sourceTree = "<group>"; };
+		7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionTableViewCell.swift; sourceTree = "<group>"; };
+		7E938D6629353539001DCD6F /* SignInScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewController.swift; sourceTree = "<group>"; };
+		7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +72,12 @@
 				7E0042ED293159BF006157AD /* SceneDelegate.swift */,
 				7E0042EF293159BF006157AD /* ViewController.swift */,
 				7E0042F1293159BF006157AD /* Main.storyboard */,
-				7E938D6629353539001DCD6F /* FirstScreenViewController.swift */,
+				7E1F6E6D2936D33F00D0A224 /* ProfileViewController.swift */,
+				7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */,
+				7E1F6E6F2936D6C700D0A224 /* ProfileOptions.swift */,
+				7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */,
+				7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */,
+				7E938D6629353539001DCD6F /* SignInScreenViewController.swift */,
 				7E0042F4293159C1006157AD /* Assets.xcassets */,
 				7E0042F6293159C1006157AD /* LaunchScreen.storyboard */,
 				7E0042F9293159C1006157AD /* Info.plist */,
@@ -142,9 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E0042F0293159BF006157AD /* ViewController.swift in Sources */,
-				7E938D6729353539001DCD6F /* FirstScreenViewController.swift in Sources */,
+				7E938D6729353539001DCD6F /* SignInScreenViewController.swift in Sources */,
 				7E0042EC293159BF006157AD /* AppDelegate.swift in Sources */,
 				7E0042EE293159BF006157AD /* SceneDelegate.swift in Sources */,
+				7E1F6E702936D6C700D0A224 /* ProfileOptions.swift in Sources */,
+				7E1F6E6E2936D33F00D0A224 /* ProfileViewController.swift in Sources */,
+				7EE476A229369F3F00C3DC07 /* ObjectivesViewController.swift in Sources */,
+				7E1F6E722936D89100D0A224 /* ProfileOptionTableViewCell.swift in Sources */,
+				7EE4769E29369B0400C3DC07 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
