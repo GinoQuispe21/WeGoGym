@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,35 +16,62 @@
                         <viewControllerLayoutGuide type="bottom" id="v5u-iG-O1r"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Y8k-vz-uOs">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Y8k-vz-uOs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="gd8-AA-wky">
-                                <rect key="frame" x="79" y="264" width="234" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="labelWeGoGym" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-AZ-qAV">
-                                <rect key="frame" x="46" y="382" width="301" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Encuentra el gimnasio  hecho a tu medida" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAp-Tw-Jpr">
-                                <rect key="frame" x="34" y="503" width="325" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwg-KK-qCI">
+                                <rect key="frame" x="46" y="254" width="283" height="304"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconLaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="gd8-AA-wky">
+                                        <rect key="frame" x="45.666666666666686" y="0.0" width="192" height="134"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="134" id="bt8-DF-vTw"/>
+                                            <constraint firstAttribute="width" constant="192" id="kGN-84-fCJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labelWeGoGym" translatesAutoresizingMaskIntoConstraints="NO" id="Ri4-AZ-qAV">
+                                        <rect key="frame" x="8" y="142" width="267" height="60"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encuentra el gimnasio  hecho a tu medida" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAp-Tw-Jpr">
+                                        <rect key="frame" x="25.333333333333329" y="238.66666666666671" width="232.33333333333337" height="57.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gd8-AA-wky" firstAttribute="centerX" secondItem="zwg-KK-qCI" secondAttribute="centerX" id="Dbw-f0-rXV"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ri4-AZ-qAV" secondAttribute="bottom" constant="102" id="FEP-Aa-eoA"/>
+                                    <constraint firstItem="gd8-AA-wky" firstAttribute="top" secondItem="zwg-KK-qCI" secondAttribute="top" id="HNZ-My-mn1"/>
+                                    <constraint firstItem="fAp-Tw-Jpr" firstAttribute="centerX" secondItem="zwg-KK-qCI" secondAttribute="centerX" id="IZg-hh-71y"/>
+                                    <constraint firstItem="Ri4-AZ-qAV" firstAttribute="centerX" secondItem="gd8-AA-wky" secondAttribute="centerX" id="YQo-NK-66f"/>
+                                    <constraint firstItem="Ri4-AZ-qAV" firstAttribute="trailing" secondItem="zwg-KK-qCI" secondAttribute="trailingMargin" id="ZzG-rp-4US"/>
+                                    <constraint firstItem="Ri4-AZ-qAV" firstAttribute="top" secondItem="gd8-AA-wky" secondAttribute="bottom" constant="8" id="c6j-Ws-eo8"/>
+                                    <constraint firstAttribute="bottom" secondItem="fAp-Tw-Jpr" secondAttribute="bottom" constant="8" id="gpp-gE-qKL"/>
+                                    <constraint firstItem="Ri4-AZ-qAV" firstAttribute="top" secondItem="gd8-AA-wky" secondAttribute="bottom" constant="8" id="zfu-vf-nTo"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="Y8k-vz-uOs" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="0bV-k3-fxi"/>
+                            <constraint firstItem="zwg-KK-qCI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="0gE-g5-mdj"/>
+                            <constraint firstItem="zwg-KK-qCI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="71F-hS-Fca"/>
+                            <constraint firstAttribute="bottom" secondItem="Y8k-vz-uOs" secondAttribute="bottom" id="Lpp-u1-f2b"/>
+                            <constraint firstItem="zwg-KK-qCI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="N9e-bb-qXJ"/>
+                            <constraint firstItem="v5u-iG-O1r" firstAttribute="top" secondItem="zwg-KK-qCI" secondAttribute="bottom" constant="220" id="P9y-Du-h7M"/>
+                            <constraint firstItem="Y8k-vz-uOs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="izz-zc-Ibj"/>
+                            <constraint firstAttribute="trailing" secondItem="Y8k-vz-uOs" secondAttribute="trailing" id="wjA-h1-6sB"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
         </scene>
     </scenes>
     <resources>
