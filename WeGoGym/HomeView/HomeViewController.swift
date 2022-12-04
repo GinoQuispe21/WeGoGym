@@ -1,13 +1,13 @@
 //
-//  FirstScreenViewController.swift
+//  HomeViewController.swift
 //  WeGoGym
 //
-//  Created by Gino Salvador Quispe Calixto on 28/11/22.
+//  Created by Gino Salvador Quispe Calixto on 4/12/22.
 //
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class HomeViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,11 +15,7 @@ class SignInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func signInValidate(_ sender: UIButton) {
-        print("Sign In Validator!")
-        performSegue(withIdentifier: "signInValidateSegue", sender: nil)
-    }
-    
+
     /*
     // MARK: - Navigation
 

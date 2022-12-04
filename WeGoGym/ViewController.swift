@@ -11,16 +11,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("HOLA")
     }
     @IBAction func signUp(_ sender: UIButton) {
-        print("Sign Up")
-        performSegue(withIdentifier: "signUpSegue", sender: nil)
+        let signUpStoryboard = UIStoryboard(name: "SignUpSB", bundle: nil)
+        let signUpViewController = signUpStoryboard.instantiateViewController(withIdentifier: "signUpViewController")
+        navigationController?.pushViewController(signUpViewController, animated: true)
     }
     @IBAction func signIn(_ sender: UIButton) {
-        print("Sign In")
-        performSegue(withIdentifier: "signInSegue", sender: nil)
+        let signInStoryboard = 	UIStoryboard(name: "SignInSB", bundle: nil)
+        let signInViewController = signInStoryboard.instantiateViewController(withIdentifier: "signInViewController")
+        navigationController?.pushViewController(signInViewController, animated: true)
     }
 }
 
