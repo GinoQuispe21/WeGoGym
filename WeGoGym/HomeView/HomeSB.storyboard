@@ -138,7 +138,7 @@
         <!--Rutinas-->
         <scene sceneID="hjd-bl-4is">
             <objects>
-                <viewController id="33Y-BF-L2W" sceneMemberID="viewController">
+                <viewController id="33Y-BF-L2W" customClass="RoutinesViewController" customModule="WeGoGym" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bMY-ZE-kzG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,43 +157,38 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t67-uy-cEr">
-                                <rect key="frame" x="30" y="221" width="333" height="528"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="t67-uy-cEr">
+                                <rect key="frame" x="10" y="196" width="373" height="553"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137254901963" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="3z5-UT-aGD">
-                                        <rect key="frame" x="0.0" y="50" width="333" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3z5-UT-aGD" id="4xU-4s-Xtc">
-                                            <rect key="frame" x="0.0" y="0.0" width="333" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6lJ-zJ-ZSF"/>
                         <color key="backgroundColor" red="0.89428746699999995" green="0.8942498565" blue="0.91887378689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="trailing" secondItem="px8-Vu-aL1" secondAttribute="trailing" constant="30" id="1hw-vQ-1WA"/>
-                            <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="trailing" secondItem="t67-uy-cEr" secondAttribute="trailing" constant="30" id="7m7-Yn-Lb8"/>
-                            <constraint firstItem="t67-uy-cEr" firstAttribute="leading" secondItem="6lJ-zJ-ZSF" secondAttribute="leading" constant="30" id="AFB-nu-uC7"/>
+                            <constraint firstItem="t67-uy-cEr" firstAttribute="top" secondItem="gqW-tV-X0H" secondAttribute="bottom" constant="5" id="4kZ-59-Acq"/>
                             <constraint firstItem="gqW-tV-X0H" firstAttribute="top" secondItem="px8-Vu-aL1" secondAttribute="bottom" constant="30" id="C8a-sV-NuW"/>
-                            <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="bottom" secondItem="t67-uy-cEr" secondAttribute="bottom" constant="20" id="QNU-cs-aRE"/>
+                            <constraint firstItem="t67-uy-cEr" firstAttribute="leading" secondItem="6lJ-zJ-ZSF" secondAttribute="leading" constant="10" id="DEU-tB-ntA"/>
+                            <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="bottom" secondItem="t67-uy-cEr" secondAttribute="bottom" constant="20" id="aGo-e8-PI1"/>
                             <constraint firstItem="px8-Vu-aL1" firstAttribute="top" secondItem="6lJ-zJ-ZSF" secondAttribute="top" constant="20" id="b8M-BV-yfn"/>
                             <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="trailing" secondItem="gqW-tV-X0H" secondAttribute="trailing" constant="30" id="cgB-2Z-k2g"/>
-                            <constraint firstItem="t67-uy-cEr" firstAttribute="top" secondItem="gqW-tV-X0H" secondAttribute="bottom" constant="30" id="pyV-CK-Kmc"/>
+                            <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="trailing" secondItem="t67-uy-cEr" secondAttribute="trailing" constant="10" id="tQa-NN-n49"/>
                             <constraint firstItem="px8-Vu-aL1" firstAttribute="leading" secondItem="6lJ-zJ-ZSF" secondAttribute="leading" constant="30" id="uLd-cW-rHP"/>
                             <constraint firstItem="gqW-tV-X0H" firstAttribute="leading" secondItem="6lJ-zJ-ZSF" secondAttribute="leading" constant="30" id="y8G-d8-VQ1"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rutinas" image="figure.strengthtraining.traditional" catalog="system" id="Exe-st-rGw"/>
+                    <connections>
+                        <outlet property="routinesTableView" destination="t67-uy-cEr" id="ZAG-CV-Z9G"/>
+                        <outlet property="searchTextField" destination="gqW-tV-X0H" id="wPx-ep-bhe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RfN-8Q-wAx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4617.5572519083971" y="-831.69014084507046"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.93435472249999996" green="0.49033868310000001" blue="0.188110739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="dumbbell.fill" catalog="system" width="128" height="72"/>
         <image name="figure.strengthtraining.traditional" catalog="system" width="128" height="119"/>
