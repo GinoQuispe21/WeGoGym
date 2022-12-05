@@ -18,6 +18,10 @@
 		7E1F6E722936D89100D0A224 /* ProfileOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */; };
 		7E489A73293D4E2F00E1B189 /* RoutineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */; };
 		7E489A74293D4E2F00E1B189 /* RoutineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */; };
+		7E489A76293D67DC00E1B189 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A75293D67DC00E1B189 /* Routine.swift */; };
+		7E489A78293D684C00E1B189 /* Excercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A77293D684C00E1B189 /* Excercise.swift */; };
+		7E489A7A293D7EBB00E1B189 /* DetailRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */; };
+		7E489A7C293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */; };
 		7E938D6729353539001DCD6F /* SignInScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E938D6629353539001DCD6F /* SignInScreenViewController.swift */; };
 		7EB687DB293D0242001BE573 /* SignInSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB687DA293D0242001BE573 /* SignInSB.storyboard */; };
 		7EB687DD293D09A5001BE573 /* SignUpSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB687DC293D09A5001BE573 /* SignUpSB.storyboard */; };
@@ -42,6 +46,10 @@
 		7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionTableViewCell.swift; sourceTree = "<group>"; };
 		7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTableViewCell.swift; sourceTree = "<group>"; };
 		7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineTableViewCell.xib; sourceTree = "<group>"; };
+		7E489A75293D67DC00E1B189 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		7E489A77293D684C00E1B189 /* Excercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excercise.swift; sourceTree = "<group>"; };
+		7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoutineViewController.swift; sourceTree = "<group>"; };
+		7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutinesFeaturesSB.storyboard; sourceTree = "<group>"; };
 		7E938D6629353539001DCD6F /* SignInScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewController.swift; sourceTree = "<group>"; };
 		7EB687DA293D0242001BE573 /* SignInSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInSB.storyboard; sourceTree = "<group>"; };
 		7EB687DC293D09A5001BE573 /* SignUpSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpSB.storyboard; sourceTree = "<group>"; };
@@ -136,6 +144,8 @@
 				7EB687E5293D3E86001BE573 /* RoutinesViewController.swift */,
 				7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */,
 				7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */,
+				7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */,
+				7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */,
 			);
 			path = RoutinesView;
 			sourceTree = "<group>";
@@ -150,6 +160,8 @@
 		7EB687E4293D1BF0001BE573 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7E489A75293D67DC00E1B189 /* Routine.swift */,
+				7E489A77293D684C00E1B189 /* Excercise.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EB687DF293D0EF5001BE573 /* HomeSB.storyboard in Resources */,
+				7E489A7C293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard in Resources */,
 				7E0042F8293159C1006157AD /* LaunchScreen.storyboard in Resources */,
 				7E0042F5293159C1006157AD /* Assets.xcassets in Resources */,
 				7E0042F3293159BF006157AD /* Main.storyboard in Resources */,
@@ -230,7 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E0042F0293159BF006157AD /* ViewController.swift in Sources */,
+				7E489A76293D67DC00E1B189 /* Routine.swift in Sources */,
 				7E938D6729353539001DCD6F /* SignInScreenViewController.swift in Sources */,
+				7E489A78293D684C00E1B189 /* Excercise.swift in Sources */,
 				7E0042EC293159BF006157AD /* AppDelegate.swift in Sources */,
 				7EB687E6293D3E86001BE573 /* RoutinesViewController.swift in Sources */,
 				7E0042EE293159BF006157AD /* SceneDelegate.swift in Sources */,
@@ -240,6 +255,7 @@
 				7EE476A229369F3F00C3DC07 /* ObjectivesViewController.swift in Sources */,
 				7E1F6E722936D89100D0A224 /* ProfileOptionTableViewCell.swift in Sources */,
 				7E489A73293D4E2F00E1B189 /* RoutineTableViewCell.swift in Sources */,
+				7E489A7A293D7EBB00E1B189 /* DetailRoutineViewController.swift in Sources */,
 				7EE4769E29369B0400C3DC07 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

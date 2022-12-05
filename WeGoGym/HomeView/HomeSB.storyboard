@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="3597.709923664122" y="405.63380281690144"/>
         </scene>
-        <!--Rutinas-->
+        <!--Mis Rutinas-->
         <scene sceneID="hjd-bl-4is">
             <objects>
-                <viewController id="33Y-BF-L2W" customClass="RoutinesViewController" customModule="WeGoGym" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Mis Rutinas" id="33Y-BF-L2W" customClass="RoutinesViewController" customModule="WeGoGym" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bMY-ZE-kzG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,20 +161,30 @@
                                 <rect key="frame" x="10" y="196" width="373" height="553"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137254901963" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsI-xc-riE">
+                                <rect key="frame" x="288" y="79" width="75" height="42"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="plus" catalog="system" title=""/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6lJ-zJ-ZSF"/>
                         <color key="backgroundColor" red="0.89428746699999995" green="0.8942498565" blue="0.91887378689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="trailing" secondItem="px8-Vu-aL1" secondAttribute="trailing" constant="30" id="1hw-vQ-1WA"/>
+                            <constraint firstItem="gqW-tV-X0H" firstAttribute="top" secondItem="px8-Vu-aL1" secondAttribute="bottom" constant="30" id="3QJ-zl-TIl"/>
                             <constraint firstItem="t67-uy-cEr" firstAttribute="top" secondItem="gqW-tV-X0H" secondAttribute="bottom" constant="5" id="4kZ-59-Acq"/>
                             <constraint firstItem="gqW-tV-X0H" firstAttribute="top" secondItem="px8-Vu-aL1" secondAttribute="bottom" constant="30" id="C8a-sV-NuW"/>
                             <constraint firstItem="t67-uy-cEr" firstAttribute="leading" secondItem="6lJ-zJ-ZSF" secondAttribute="leading" constant="10" id="DEU-tB-ntA"/>
+                            <constraint firstItem="gqW-tV-X0H" firstAttribute="centerX" secondItem="t67-uy-cEr" secondAttribute="centerX" id="FRA-OG-gTx"/>
+                            <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="trailing" secondItem="JsI-xc-riE" secondAttribute="trailing" constant="22" id="QnR-9x-qm1"/>
+                            <constraint firstItem="JsI-xc-riE" firstAttribute="leading" secondItem="6lJ-zJ-ZSF" secondAttribute="leading" constant="288" id="Rg4-h3-vqh"/>
+                            <constraint firstItem="px8-Vu-aL1" firstAttribute="bottom" secondItem="JsI-xc-riE" secondAttribute="bottom" id="Upd-xS-vit"/>
                             <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="bottom" secondItem="t67-uy-cEr" secondAttribute="bottom" constant="20" id="aGo-e8-PI1"/>
                             <constraint firstItem="px8-Vu-aL1" firstAttribute="top" secondItem="6lJ-zJ-ZSF" secondAttribute="top" constant="20" id="b8M-BV-yfn"/>
-                            <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="trailing" secondItem="gqW-tV-X0H" secondAttribute="trailing" constant="30" id="cgB-2Z-k2g"/>
+                            <constraint firstItem="px8-Vu-aL1" firstAttribute="leading" secondItem="6lJ-zJ-ZSF" secondAttribute="leading" constant="30" id="dIj-Fy-4Qh"/>
+                            <constraint firstItem="px8-Vu-aL1" firstAttribute="top" secondItem="JsI-xc-riE" secondAttribute="top" id="dXn-lU-duW"/>
+                            <constraint firstItem="px8-Vu-aL1" firstAttribute="trailing" secondItem="gqW-tV-X0H" secondAttribute="trailing" id="gLu-JD-DBe"/>
                             <constraint firstItem="6lJ-zJ-ZSF" firstAttribute="trailing" secondItem="t67-uy-cEr" secondAttribute="trailing" constant="10" id="tQa-NN-n49"/>
-                            <constraint firstItem="px8-Vu-aL1" firstAttribute="leading" secondItem="6lJ-zJ-ZSF" secondAttribute="leading" constant="30" id="uLd-cW-rHP"/>
-                            <constraint firstItem="gqW-tV-X0H" firstAttribute="leading" secondItem="6lJ-zJ-ZSF" secondAttribute="leading" constant="30" id="y8G-d8-VQ1"/>
+                            <constraint firstItem="gqW-tV-X0H" firstAttribute="leading" secondItem="px8-Vu-aL1" secondAttribute="leading" id="xhi-ws-9Z5"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Rutinas" image="figure.strengthtraining.traditional" catalog="system" id="Exe-st-rGw"/>
@@ -195,5 +205,6 @@
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
     </resources>
 </document>
