@@ -32,7 +32,9 @@ class RoutinesViewController: UIViewController {
         Routine(name: "Push day", desciption: "Rutina para ejercitar todo el cuerpo y mejorar interdiariamente", author: "Entreandor Miguel", time: 60, excercies: excercisesArray1, countExc: excercisesArray1.count)
     ]
     
-    
+    @IBAction func addButton(_ sender: UIButton) {
+        print("Add Button")
+    }
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var routinesTableView: UITableView!
@@ -86,6 +88,27 @@ extension RoutinesViewController: UITableViewDataSource, UITableViewDelegate {
         navigationController?.pushViewController(detailRoutineViewController, animated: true)
         
     }
+}
+
+extension RoutinesViewController: AddRoutineViewControllerDelegate {
+    func addRoutineViewControllerDelegate(_ viewController: UIViewController, didCreateRoutine newRoutine: Routine) {
+        routines.append(newRoutine)
+        routinesTableView.reloadData()
+    }
+}
+
+extension RoutinesViewController {
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nav = segue.destination as? UINavigationController
+        let destination = nav?.viewControllers.first as? AddRoutineViewController
+        destination?.delegate = self
+    }
+    
 }
 
 // Code from "https://medium.com/@mtssonmez/handle-empty-tableview-in-swift-4-ios-11-23635d108409" to add a label message when table is empty

@@ -22,6 +22,7 @@
 		7E489A78293D684C00E1B189 /* Excercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A77293D684C00E1B189 /* Excercise.swift */; };
 		7E489A7A293D7EBB00E1B189 /* DetailRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */; };
 		7E489A7C293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */; };
+		7E489A7E293DA2CB00E1B189 /* AddRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */; };
 		7E938D6729353539001DCD6F /* SignInScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E938D6629353539001DCD6F /* SignInScreenViewController.swift */; };
 		7EB687DB293D0242001BE573 /* SignInSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB687DA293D0242001BE573 /* SignInSB.storyboard */; };
 		7EB687DD293D09A5001BE573 /* SignUpSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB687DC293D09A5001BE573 /* SignUpSB.storyboard */; };
@@ -50,6 +51,7 @@
 		7E489A77293D684C00E1B189 /* Excercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excercise.swift; sourceTree = "<group>"; };
 		7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoutineViewController.swift; sourceTree = "<group>"; };
 		7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutinesFeaturesSB.storyboard; sourceTree = "<group>"; };
+		7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoutineViewController.swift; sourceTree = "<group>"; };
 		7E938D6629353539001DCD6F /* SignInScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewController.swift; sourceTree = "<group>"; };
 		7EB687DA293D0242001BE573 /* SignInSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInSB.storyboard; sourceTree = "<group>"; };
 		7EB687DC293D09A5001BE573 /* SignUpSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpSB.storyboard; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */,
 				7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */,
 				7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */,
+				7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */,
 			);
 			path = RoutinesView;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				7E0042EC293159BF006157AD /* AppDelegate.swift in Sources */,
 				7EB687E6293D3E86001BE573 /* RoutinesViewController.swift in Sources */,
 				7E0042EE293159BF006157AD /* SceneDelegate.swift in Sources */,
+				7E489A7E293DA2CB00E1B189 /* AddRoutineViewController.swift in Sources */,
 				7E1F6E702936D6C700D0A224 /* ProfileOptions.swift in Sources */,
 				7EB687E1293D13CE001BE573 /* HomeViewController.swift in Sources */,
 				7E1F6E6E2936D33F00D0A224 /* ProfileViewController.swift in Sources */,
