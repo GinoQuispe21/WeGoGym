@@ -24,13 +24,15 @@ class RoutinesViewController: UIViewController {
         Excercise(name: "Press de Banca", description: "Las dominadas ayudan a tener mayor resistencia en los antebrazos y crecer la amplitud de la espalda", muscle: "Pectoral", series: 4, reps: 10),
     ]
     
-    lazy var routines = [
+    lazy var routines : [Routine] = [
         Routine(name: "Full Body Routine", desciption: "Rutina para ejercitar todo el cuerpo y mejorar interdiariamente", author: "Entreandor Pedro", time: 60, excercies: excercisesArray, countExc: excercisesArray.count),
         Routine(name: "Entrenamiento de espalda", desciption: "Rutina para ejercitar todo el cuerpo y mejorar interdiariamente", author: "Entreandor Gino", time: 60, excercies: excercisesArray1, countExc: excercisesArray1.count),
         Routine(name: "Entrenamiento de pectoral", desciption: "Rutina para ejercitar todo el cuerpo y mejorar interdiariamente", author: "Entreandor Pedro", time: 60, excercies: excercisesArray1, countExc: excercisesArray1.count),
         Routine(name: "Entrenamiento de hombros", desciption: "Rutina para ejercitar todo el cuerpo y mejorar interdiariamente", author: "Entreandor Pedro", time: 60, excercies: excercisesArray, countExc: excercisesArray.count),
         Routine(name: "Push day", desciption: "Rutina para ejercitar todo el cuerpo y mejorar interdiariamente", author: "Entreandor Miguel", time: 60, excercies: excercisesArray1, countExc: excercisesArray1.count)
     ]
+    
+    var backup : [Routine] = []
     
     @IBAction func addButton(_ sender: UIButton) {
         print("Add Button")
@@ -46,8 +48,26 @@ class RoutinesViewController: UIViewController {
         routinesTableView.register(nib, forCellReuseIdentifier: "routineCell")
         routinesTableView.delegate = self
         routinesTableView.dataSource = self
+        backup = routines
+        searchTextField.addTarget(self, action: #selector(searchTextField(_:)), for: .editingChanged)
     }
 
+}
+
+extension RoutinesViewController {
+    @objc func searchTextField(_ textField: UITextField){
+        var routinesFiltered : [Routine] = []
+        if textField == searchTextField {
+            let text = searchTextField.text ?? ""
+            routines.forEach({ value in
+                if value.name.lowercased().contains(text.lowercased()) || value.author.lowercased().contains(text.lowercased()) {
+                    routinesFiltered.append(value)
+                }
+            })
+            routines = (text.count > 0) ? routinesFiltered : backup
+            routinesTableView.reloadData()
+        }
+    }
 }
 
 extension RoutinesViewController: UITableViewDataSource, UITableViewDelegate {
@@ -95,6 +115,7 @@ extension RoutinesViewController: UITableViewDataSource, UITableViewDelegate {
 extension RoutinesViewController: AddRoutineViewControllerDelegate {
     func addRoutineViewControllerDelegate(_ viewController: UIViewController, didCreateRoutine newRoutine: Routine) {
         routines.append(newRoutine)
+        backup = routines
         routinesTableView.reloadData()
     }
 }
