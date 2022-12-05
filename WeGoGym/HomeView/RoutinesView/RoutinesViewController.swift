@@ -85,6 +85,8 @@ extension RoutinesViewController: UITableViewDataSource, UITableViewDelegate {
             return
         }
         detailRoutineViewController.routine = rotuine
+        detailRoutineViewController.delegate = self
+        detailRoutineViewController.indexCell = indexPath.section
         navigationController?.pushViewController(detailRoutineViewController, animated: true)
         
     }
@@ -93,6 +95,13 @@ extension RoutinesViewController: UITableViewDataSource, UITableViewDelegate {
 extension RoutinesViewController: AddRoutineViewControllerDelegate {
     func addRoutineViewControllerDelegate(_ viewController: UIViewController, didCreateRoutine newRoutine: Routine) {
         routines.append(newRoutine)
+        routinesTableView.reloadData()
+    }
+}
+
+extension RoutinesViewController : DetailRoutineViewControllerDelegate {
+    func detailRoutineViewController(_ viewController: UIViewController, didRemoveRoutine index: Int) {
+        routines.remove(at: index)
         routinesTableView.reloadData()
     }
 }

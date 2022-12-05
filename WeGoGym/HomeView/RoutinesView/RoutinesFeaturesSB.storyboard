@@ -34,6 +34,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" image="pencil" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="editRoutineButton:" destination="hfM-4m-cwZ" eventType="touchUpInside" id="yfm-Y6-iCW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNC-fF-l5B">
                                 <rect key="frame" x="320" y="146" width="53" height="47"/>
@@ -43,15 +46,18 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="trash.fill" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="deleteRoutineButton:" destination="hfM-4m-cwZ" eventType="touchUpInside" id="GJf-OL-OfO"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelssssdasdasdasdasdasdadasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgC-9r-Znj">
-                                <rect key="frame" x="20" y="214" width="351" height="61"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgC-9r-Znj">
+                                <rect key="frame" x="20" y="214" width="351" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I53-lc-Rv3">
-                                <rect key="frame" x="20" y="295" width="158" height="21"/>
+                                <rect key="frame" x="20" y="254.33333333333337" width="158" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="7T4-PB-RCd"/>
                                     <constraint firstAttribute="width" constant="158" id="YhH-Kc-f3r"/>
@@ -61,7 +67,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmD-yb-uTT">
-                                <rect key="frame" x="215" y="295" width="158" height="21"/>
+                                <rect key="frame" x="215" y="254.33333333333337" width="158" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Fwh-l0-o0L"/>
                                     <constraint firstAttribute="width" constant="158" id="nOv-9z-PrW"/>
