@@ -139,7 +139,7 @@
         <!--Mis Rutinas-->
         <scene sceneID="hjd-bl-4is">
             <objects>
-                <viewController title="Mis Rutinas" id="33Y-BF-L2W" customClass="RoutinesViewController" customModule="WeGoGym" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="routinesViewController" title="Mis Rutinas" id="33Y-BF-L2W" customClass="RoutinesViewController" customModule="WeGoGym" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bMY-ZE-kzG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

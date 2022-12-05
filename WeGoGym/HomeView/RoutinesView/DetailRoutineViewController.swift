@@ -21,8 +21,20 @@ class DetailRoutineViewController: UIViewController {
     }
     
     @IBAction func deleteRoutineButton(_ sender: UIButton) {
-        delegate?.detailRoutineViewController(self, didRemoveRoutine: indexCell)
-        navigationController?.popViewController(animated: true)
+        showAlert()
+    }
+    
+    func showAlert() {
+        let alert = UIAlertController(title: "Eliminar rutina", message: "¿Estás seguro de eliminar esta rutina?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: { action in
+            print("cancelar")
+        }))
+        alert.addAction(UIAlertAction(title: "Eliminar", style: .destructive, handler: { action in
+            self.delegate?.detailRoutineViewController(self, didRemoveRoutine: self.indexCell)
+            self.navigationController?.popViewController(animated: true)
+            print("eliminar")
+        }))
+        present(alert, animated: true)
     }
     
     weak var delegate : DetailRoutineViewControllerDelegate?

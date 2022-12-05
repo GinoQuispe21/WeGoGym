@@ -16,6 +16,7 @@
 		7E1F6E6E2936D33F00D0A224 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E6D2936D33F00D0A224 /* ProfileViewController.swift */; };
 		7E1F6E702936D6C700D0A224 /* ProfileOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E6F2936D6C700D0A224 /* ProfileOptions.swift */; };
 		7E1F6E722936D89100D0A224 /* ProfileOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */; };
+		7E41A064293E69B000B60316 /* UpdateRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41A063293E69B000B60316 /* UpdateRoutineViewController.swift */; };
 		7E489A73293D4E2F00E1B189 /* RoutineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */; };
 		7E489A74293D4E2F00E1B189 /* RoutineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */; };
 		7E489A76293D67DC00E1B189 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A75293D67DC00E1B189 /* Routine.swift */; };
@@ -45,6 +46,7 @@
 		7E1F6E6D2936D33F00D0A224 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7E1F6E6F2936D6C700D0A224 /* ProfileOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptions.swift; sourceTree = "<group>"; };
 		7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionTableViewCell.swift; sourceTree = "<group>"; };
+		7E41A063293E69B000B60316 /* UpdateRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRoutineViewController.swift; sourceTree = "<group>"; };
 		7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTableViewCell.swift; sourceTree = "<group>"; };
 		7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineTableViewCell.xib; sourceTree = "<group>"; };
 		7E489A75293D67DC00E1B189 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */,
 				7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */,
 				7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */,
+				7E41A063293E69B000B60316 /* UpdateRoutineViewController.swift */,
 			);
 			path = RoutinesView;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				7E1F6E722936D89100D0A224 /* ProfileOptionTableViewCell.swift in Sources */,
 				7E489A73293D4E2F00E1B189 /* RoutineTableViewCell.swift in Sources */,
 				7E489A7A293D7EBB00E1B189 /* DetailRoutineViewController.swift in Sources */,
+				7E41A064293E69B000B60316 /* UpdateRoutineViewController.swift in Sources */,
 				7EE4769E29369B0400C3DC07 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
