@@ -32,6 +32,7 @@
 		7EB687E6293D3E86001BE573 /* RoutinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB687E5293D3E86001BE573 /* RoutinesViewController.swift */; };
 		7EE4769E29369B0400C3DC07 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */; };
 		7EE476A229369F3F00C3DC07 /* ObjectivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */; };
+		7EF90269294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF90268294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		7EB687E5293D3E86001BE573 /* RoutinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesViewController.swift; sourceTree = "<group>"; };
 		7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesViewController.swift; sourceTree = "<group>"; };
+		7EF90268294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseRoutineDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */,
 				7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */,
 				7E41A063293E69B000B60316 /* UpdateRoutineViewController.swift */,
+				7EF90268294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift */,
 			);
 			path = RoutinesView;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				7E489A76293D67DC00E1B189 /* Routine.swift in Sources */,
 				7E938D6729353539001DCD6F /* SignInScreenViewController.swift in Sources */,
 				7E489A78293D684C00E1B189 /* Excercise.swift in Sources */,
+				7EF90269294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift in Sources */,
 				7E0042EC293159BF006157AD /* AppDelegate.swift in Sources */,
 				7EB687E6293D3E86001BE573 /* RoutinesViewController.swift in Sources */,
 				7E0042EE293159BF006157AD /* SceneDelegate.swift in Sources */,

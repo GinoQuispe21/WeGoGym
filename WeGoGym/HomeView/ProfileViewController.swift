@@ -35,8 +35,7 @@ extension ProfileViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cellProfile", for: indexPath)
-//        return cell
+	
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cellProfile", for: indexPath) as? ProfileOptionTableViewCell{
             let name = arrayOptions[indexPath.row].name
             cell.nameOption.text = name

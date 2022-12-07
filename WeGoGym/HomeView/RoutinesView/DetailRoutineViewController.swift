@@ -17,6 +17,7 @@ class DetailRoutineViewController: UIViewController {
     var exercises : [Excercise]? = []
     var indexCell: Int = 0
     
+    @IBOutlet weak var excercisesCollectionView: UICollectionView!
     @IBAction func editRoutineButton(_ sender: UIButton) {
     }
     
@@ -27,12 +28,10 @@ class DetailRoutineViewController: UIViewController {
     func showAlert() {
         let alert = UIAlertController(title: "Eliminar rutina", message: "¿Estás seguro de eliminar esta rutina?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: { action in
-            print("cancelar")
         }))
         alert.addAction(UIAlertAction(title: "Eliminar", style: .destructive, handler: { action in
             self.delegate?.detailRoutineViewController(self, didRemoveRoutine: self.indexCell)
             self.navigationController?.popViewController(animated: true)
-            print("eliminar")
         }))
         present(alert, animated: true)
     }
@@ -46,6 +45,12 @@ class DetailRoutineViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//      For Collection View
+        excercisesCollectionView.dataSource = self
+        excercisesCollectionView.delegate = self
+        excercisesCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
+        
         nameRoutineLabel.text = routine?.name
         descRoutineLabel.text = routine?.desciption
         if let count = routine?.countExc {
@@ -56,15 +61,23 @@ class DetailRoutineViewController: UIViewController {
         }
         exercises = routine?.excercies
     }
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension DetailRoutineViewController : UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let num = exercises?.count else { return 0 }
+        return num
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "excerciseRoutineDetailCollectionViewCell", for: indexPath) as? ExcerciseRoutineDetailCollectionViewCell else { return UICollectionViewCell() }
+        cell.setupValues(excercise: exercises?[indexPath.row] ?? Excercise(name: "", description: "", muscle: "", series: 0, reps: 0))
+        return cell
+    }
+}
 
+extension DetailRoutineViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 150, height: 150)
+    }
 }
