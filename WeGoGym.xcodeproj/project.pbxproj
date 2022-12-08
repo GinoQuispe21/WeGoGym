@@ -30,6 +30,8 @@
 		7EB687DF293D0EF5001BE573 /* HomeSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB687DE293D0EF5001BE573 /* HomeSB.storyboard */; };
 		7EB687E1293D13CE001BE573 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB687E0293D13CE001BE573 /* HomeViewController.swift */; };
 		7EB687E6293D3E86001BE573 /* RoutinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB687E5293D3E86001BE573 /* RoutinesViewController.swift */; };
+		7EB71B8D294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB71B8C294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift */; };
+		7EB71B8F294152AB002D7E7C /* ExecerciseListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB71B8E294152AB002D7E7C /* ExecerciseListTableViewCell.swift */; };
 		7EE4769E29369B0400C3DC07 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */; };
 		7EE476A229369F3F00C3DC07 /* ObjectivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */; };
 		7EF90269294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF90268294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift */; };
@@ -61,6 +63,8 @@
 		7EB687DE293D0EF5001BE573 /* HomeSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeSB.storyboard; sourceTree = "<group>"; };
 		7EB687E0293D13CE001BE573 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7EB687E5293D3E86001BE573 /* RoutinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesViewController.swift; sourceTree = "<group>"; };
+		7EB71B8C294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseAddedCollectionViewCell.swift; sourceTree = "<group>"; };
+		7EB71B8E294152AB002D7E7C /* ExecerciseListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecerciseListTableViewCell.swift; sourceTree = "<group>"; };
 		7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesViewController.swift; sourceTree = "<group>"; };
 		7EF90268294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseRoutineDetailCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -147,12 +151,12 @@
 		7EB687E2293D1BC6001BE573 /* RoutinesView */ = {
 			isa = PBXGroup;
 			children = (
+				7EB71B8B2941439A002D7E7C /* AddRoutineView */,
 				7EB687E5293D3E86001BE573 /* RoutinesViewController.swift */,
 				7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */,
 				7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */,
 				7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */,
 				7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */,
-				7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */,
 				7E41A063293E69B000B60316 /* UpdateRoutineViewController.swift */,
 				7EF90268294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift */,
 			);
@@ -173,6 +177,16 @@
 				7E489A77293D684C00E1B189 /* Excercise.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7EB71B8B2941439A002D7E7C /* AddRoutineView */ = {
+			isa = PBXGroup;
+			children = (
+				7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */,
+				7EB71B8C294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift */,
+				7EB71B8E294152AB002D7E7C /* ExecerciseListTableViewCell.swift */,
+			);
+			path = AddRoutineView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +278,8 @@
 				7EB687E1293D13CE001BE573 /* HomeViewController.swift in Sources */,
 				7E1F6E6E2936D33F00D0A224 /* ProfileViewController.swift in Sources */,
 				7EE476A229369F3F00C3DC07 /* ObjectivesViewController.swift in Sources */,
+				7EB71B8F294152AB002D7E7C /* ExecerciseListTableViewCell.swift in Sources */,
+				7EB71B8D294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift in Sources */,
 				7E1F6E722936D89100D0A224 /* ProfileOptionTableViewCell.swift in Sources */,
 				7E489A73293D4E2F00E1B189 /* RoutineTableViewCell.swift in Sources */,
 				7E489A7A293D7EBB00E1B189 /* DetailRoutineViewController.swift in Sources */,
