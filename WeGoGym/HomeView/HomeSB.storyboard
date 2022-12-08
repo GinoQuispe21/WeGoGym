@@ -227,7 +227,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 ejercicios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7X-cn-0XH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7X-cn-0XH">
                                 <rect key="frame" x="276" y="194" width="87" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="fsC-a6-Zce"/>
@@ -320,6 +320,9 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system" title="">
                                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="updateExcerciseButton:" destination="ecP-VF-a1g" eventType="touchUpInside" id="kJM-He-4QI"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5V-mu-VSq">
                                                     <rect key="frame" x="114" y="8" width="24" height="21"/>
@@ -332,6 +335,9 @@
                                                     <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system" title="">
                                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="deleteExcerciseButton:" destination="ecP-VF-a1g" eventType="touchUpInside" id="bG2-g7-dHm"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -466,11 +472,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="counExcercisesLabel" destination="h7X-cn-0XH" id="tj0-pt-uoV"/>
                         <outlet property="descTextField" destination="UJD-N4-LzK" id="PzG-sn-ayn"/>
                         <outlet property="excercisesAddedCollectionView" destination="Rra-zh-Lmi" id="5ct-z7-6fV"/>
                         <outlet property="excercisesTableView" destination="eJg-lA-SgI" id="B86-OE-GOo"/>
                         <outlet property="nameTextField" destination="Q68-ID-162" id="axr-jd-MLL"/>
                         <outlet property="searchExcerciseTextField" destination="N4Q-Hc-RgY" id="ziD-5L-pNb"/>
+                        <outlet property="timeExcercisesLabel" destination="oDD-uq-gl4" id="LII-56-KEm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W3d-1q-Dpg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
