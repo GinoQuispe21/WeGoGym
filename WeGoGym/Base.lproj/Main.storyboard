@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XXi-4d-Txu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YHk-de-XOC">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -126,10 +127,121 @@ inicia sesión o registrate</string>
             </objects>
             <point key="canvasLocation" x="916.79389312977094" y="-324.64788732394368"/>
         </scene>
+        <!--Mis Rutinas-->
+        <scene sceneID="lMI-S7-mJI">
+            <objects>
+                <viewController storyboardIdentifier="myRoutinesViewController" title="Mis Rutinas" id="oRj-cY-Bih" customClass="MyRoutinesViewController" customModule="WeGoGym" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cB-pV-g4B">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mis Rutinas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isI-17-6on">
+                                <rect key="frame" x="30" y="79" width="333" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.93435472249999996" green="0.49033868310000001" blue="0.188110739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xw5-1F-Eyx">
+                                <rect key="frame" x="30" y="151" width="333" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="H7P-e8-9l6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gml-gj-6BU">
+                                <rect key="frame" x="10" y="196" width="373" height="622"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faH-r2-xp2">
+                                <rect key="frame" x="288" y="79" width="75" height="42"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="plus" catalog="system" title=""/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5xQ-Sw-L5o"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="Xw5-1F-Eyx" firstAttribute="centerX" secondItem="Gml-gj-6BU" secondAttribute="centerX" id="80j-mb-uDI"/>
+                            <constraint firstItem="isI-17-6on" firstAttribute="top" secondItem="faH-r2-xp2" secondAttribute="top" id="BaA-dO-aWx"/>
+                            <constraint firstItem="isI-17-6on" firstAttribute="top" secondItem="5xQ-Sw-L5o" secondAttribute="top" constant="20" id="CBP-Ci-fyr"/>
+                            <constraint firstItem="Xw5-1F-Eyx" firstAttribute="top" secondItem="isI-17-6on" secondAttribute="bottom" constant="30" id="Ehv-ad-mQL"/>
+                            <constraint firstItem="isI-17-6on" firstAttribute="trailing" secondItem="Xw5-1F-Eyx" secondAttribute="trailing" id="GYB-OP-ZuY"/>
+                            <constraint firstItem="5xQ-Sw-L5o" firstAttribute="trailing" secondItem="Gml-gj-6BU" secondAttribute="trailing" constant="10" id="Qto-PN-phW"/>
+                            <constraint firstItem="5xQ-Sw-L5o" firstAttribute="bottom" secondItem="Gml-gj-6BU" secondAttribute="bottom" id="WZ3-Uc-WPP"/>
+                            <constraint firstItem="isI-17-6on" firstAttribute="bottom" secondItem="faH-r2-xp2" secondAttribute="bottom" id="egn-in-Gb5"/>
+                            <constraint firstItem="Xw5-1F-Eyx" firstAttribute="top" secondItem="isI-17-6on" secondAttribute="bottom" constant="30" id="hz8-fN-D24"/>
+                            <constraint firstItem="Gml-gj-6BU" firstAttribute="top" secondItem="Xw5-1F-Eyx" secondAttribute="bottom" constant="5" id="jub-BL-97V"/>
+                            <constraint firstItem="5xQ-Sw-L5o" firstAttribute="trailing" secondItem="faH-r2-xp2" secondAttribute="trailing" constant="22" id="nWb-WI-0Pd"/>
+                            <constraint firstItem="isI-17-6on" firstAttribute="leading" secondItem="5xQ-Sw-L5o" secondAttribute="leading" constant="30" id="pa0-eu-jTV"/>
+                            <constraint firstItem="Xw5-1F-Eyx" firstAttribute="leading" secondItem="isI-17-6on" secondAttribute="leading" id="qng-7P-xIE"/>
+                            <constraint firstItem="faH-r2-xp2" firstAttribute="leading" secondItem="5xQ-Sw-L5o" secondAttribute="leading" constant="288" id="vxd-Jn-XaX"/>
+                            <constraint firstItem="Gml-gj-6BU" firstAttribute="leading" secondItem="5xQ-Sw-L5o" secondAttribute="leading" constant="10" id="wvV-CH-soS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rutinas" image="figure.strengthtraining.traditional" catalog="system" id="2Kl-6D-JuZ"/>
+                    <connections>
+                        <outlet property="myRoutinesTableView" destination="Gml-gj-6BU" id="JeK-15-gYP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7D-0G-Z2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3378" y="644"/>
+        </scene>
+        <!--Template View Controller-->
+        <scene sceneID="0GI-by-pAM">
+            <objects>
+                <viewController storyboardIdentifier="templateViewController" id="I4v-vn-CEY" customClass="TemplateViewController" customModule="WeGoGym" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4hK-Br-imm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLX-xv-MOA">
+                                <rect key="frame" x="159" y="409" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <action selector="openMyRoutines:" destination="I4v-vn-CEY" eventType="touchUpInside" id="o5J-Zj-KAd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pMQ-tF-RRB"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lx9-xx-sMi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsx-st-K6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2553" y="644"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8bd-GA-72F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YHk-de-XOC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2yP-gq-mo7">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="I4v-vn-CEY" kind="relationship" relationship="rootViewController" id="fx2-gI-6MH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ljC-ZT-h5s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1680" y="644"/>
+        </scene>
     </scenes>
     <color key="tintColor" red="0.93435472249999996" green="0.49033868310000001" blue="0.188110739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="backgroundFirstScreen" width="780" height="1688"/>
+        <image name="figure.strengthtraining.traditional" catalog="system" width="128" height="119"/>
         <image name="labelWeGoGym" width="616" height="132"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

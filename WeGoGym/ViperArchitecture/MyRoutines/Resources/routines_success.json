@@ -1,0 +1,146 @@
+[
+ {
+     "name": "Rutina de Pectoral",
+     "author": "Pedro Ramirez",
+     "descripcion": "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+     "time": 40,
+     "exercises": [
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         }
+     ]
+ },
+ {
+     "name": "Rutina de Espalda",
+     "author": "Hector Susuki",
+     "descripcion": "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+     "time": 30,
+     "exercises": [
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         }
+     ]
+ },
+ {
+     "name": "Rutina de Piernas",
+     "author": "Carlos Mazzarri",
+     "descripcion": "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+     "time": 20,
+     "exercises": [
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         }
+     ]
+ },
+ {
+     "name": "Rutina Full Body",
+     "author": "Juan Leyva",
+     "descripcion": "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+     "exercises": [
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         }
+     ]
+ },
+ {
+     "name": "Rutina de hombros",
+     "author": "Rodrigo Ramirez",
+     "descripcion": "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+     "time": 10,
+     "exercises": [
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         }
+     ]
+ }
+]

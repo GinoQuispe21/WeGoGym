@@ -16,7 +16,7 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signInValidate(_ sender: UIButton) {
-        print("Sign In Validator!")
+//        print("Sign In Validator!")
 //        performSegue(withIdentifier: "signInValidateSegue", sender: nil)
         let storyBoard = UIStoryboard(name: "HomeSB", bundle: nil)
         let viewController = storyBoard.instantiateViewController(withIdentifier: "homeViewController")

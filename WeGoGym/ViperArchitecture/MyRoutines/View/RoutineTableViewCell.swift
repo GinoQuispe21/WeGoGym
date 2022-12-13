@@ -32,4 +32,10 @@ class RoutineTableViewCell: UITableViewCell {
         timeRoutineLabel.text = "\(String(timeExc)) minutos"
     }
     
+    func setupEntity(_ routine: RoutineEntity) {
+        nameLabel.text = routine.name
+        authorLabel.text = "Creado por \(routine.author)"
+        countExcerciseLabel.text = "\(routine.exercises.count) Ejercicios"
+        timeRoutineLabel.text = "\(String(routine.time)) minutos"
+    }
 }

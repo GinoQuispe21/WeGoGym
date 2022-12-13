@@ -33,7 +33,7 @@ class ExecerciseListTableViewCell: UITableViewCell {
                 }
                 alert.addAction(UIAlertAction(title: "Cancelar", style: .default, handler: nil))
                 alert.addAction(UIAlertAction(title: "Crear", style: .default, handler: { action in
-                    print("works this alert")
+//                    print("works this alert")
                     guard let inputs = alert.textFields, inputs.count == 2 else {return}
                     let seriesField = inputs[0]
                     let repsField = inputs[1]

@@ -35,7 +35,7 @@ class RoutinesViewController: UIViewController {
     var backup : [Routine] = []
     
     @IBAction func addButton(_ sender: UIButton) {
-        print("Add Button")
+//        print("Add Button")
     }
     
     @IBOutlet weak var searchTextField: UITextField!

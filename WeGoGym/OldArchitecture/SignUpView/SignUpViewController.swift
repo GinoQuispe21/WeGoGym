@@ -17,7 +17,7 @@ class SignUpViewController: UIViewController {
     
 
     @IBAction func signUpButton(_ sender: UIButton) {
-        print("SignUp Validation")
+//        print("SignUp Validation")
 //        performSegue(withIdentifier: "SignUpSegueValidator", sender: nil)
     }
     /*
