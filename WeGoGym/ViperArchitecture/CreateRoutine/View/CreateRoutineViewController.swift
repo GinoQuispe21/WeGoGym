@@ -9,6 +9,8 @@ import UIKit
 
 protocol CreateRoutineViewControllerProtocol {
     func reciveRoutines(_ arrayAllExercises: [ExerciseEntity])
+    func reciveNewExercise(_ newArrayExercisesAdded: [ExcerciseStruct])
+    func deleteExercise(_ newArrayExerciseDeleted: [ExcerciseStruct])
 }
 
 class CreateRoutineViewController: UIViewController {
@@ -23,7 +25,7 @@ class CreateRoutineViewController: UIViewController {
     }
     
     @IBAction func createeRoutineButton(_ sender: UIBarButtonItem) {
-        presenter?.addRoutine(name: nameRoutineTextField.text, description: descriptionRoutineTextField.text, excercises: [])
+        presenter?.addRoutine(name: nameRoutineTextField.text, description: descriptionRoutineTextField.text, excercises: arrayExercises)
     }
     
     @IBOutlet weak private var nameRoutineTextField: UITextField!
@@ -52,6 +54,9 @@ extension CreateRoutineViewController : UICollectionViewDataSource, UICollection
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "createRoutineCollectionViewCell", for: indexPath) as? CreateRoutineCollectionViewCell else {
             return UICollectionViewCell()
         }
+        cell.presenter = presenter
+        cell.indexCell = indexPath.row
+        cell.setupLabels(arrayExercises[indexPath.row])
         return cell
     }
     
@@ -70,12 +75,24 @@ extension CreateRoutineViewController : UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "createRoutineExerciseTableViewCell") as? CreateRoutineExerciseTableViewCell else {
             return UITableViewCell()
         }
+        cell.presenter = presenter
         cell.setupValues(arrayTableView[indexPath.row])
         return cell
     }
 }
 
 extension CreateRoutineViewController : CreateRoutineViewControllerProtocol {
+    
+    func reciveNewExercise(_ newArrayExercisesAdded: [ExcerciseStruct]) {
+        self.arrayExercises = newArrayExercisesAdded
+        self.exercisesAddedCollectionView.reloadData()
+    }
+    
+    func deleteExercise(_ newArrayExerciseDeleted: [ExcerciseStruct]) {
+        self.arrayExercises = newArrayExerciseDeleted
+        self.exercisesAddedCollectionView.reloadData()
+    }
+    
     func reciveRoutines(_ arrayAllExercises: [ExerciseEntity]) {
         self.arrayTableView = arrayAllExercises
     }

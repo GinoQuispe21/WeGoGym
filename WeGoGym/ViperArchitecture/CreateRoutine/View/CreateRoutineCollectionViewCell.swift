@@ -9,5 +9,20 @@ import UIKit
 
 class CreateRoutineCollectionViewCell: UICollectionViewCell {
     
-
+    var presenter: CreateRoutinePresenterProtocol?
+    var indexCell: Int = 0
+    
+    @IBOutlet private weak var nameExerciseLabel: UILabel!
+    @IBOutlet private weak var seriesExerciseLabel: UILabel!
+    @IBOutlet private weak var repsExercisesLabel: UILabel!
+    @IBAction func deleteExerciseButton(_ sender: UIButton) {
+        presenter?.deleteExerciseToRoutine(indexCell)
+    }
+    
+    func setupLabels(_ exercise: ExcerciseStruct) {
+        nameExerciseLabel.text = exercise.name
+        seriesExerciseLabel.text = "\(String(exercise.series)) series"
+        repsExercisesLabel.text = "\(String(exercise.reps)) reps"
+    }
+    
 }

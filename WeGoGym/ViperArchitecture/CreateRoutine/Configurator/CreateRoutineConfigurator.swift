@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 public protocol CreateRoutineConfiguratorDelegate {
-//    aca deberiamos mandar viewController: UIVIEWCONTROLLER segun video de franti
     func createRoutineConfiguratorDelegate(didCreate nameRoutine: RoutineEntity)
 }
 
@@ -27,7 +26,7 @@ public class CreateRoutineConfigurator {
         }
         let interactor = CreateRoutineInteractor(api: api, presenter: presenter)
 //        no se puede acceder al delegate por el constructor xq estoy en un metodo de clase
-        let router = CreateRoutineRouter(view: viewController, delegate: delegate!)
+        let router = CreateRoutineRouter(view: viewController, presenter: presenter ,delegate: delegate!)
         viewController.presenter = presenter
         presenter.view = viewController
         presenter.interactor = interactor

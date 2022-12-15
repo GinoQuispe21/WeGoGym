@@ -9,8 +9,13 @@ import UIKit
 
 class CreateRoutineExerciseTableViewCell: UITableViewCell {
 
+    var presenter: CreateRoutinePresenterProtocol?
+    
     @IBOutlet weak var nameExerciseLabel: UILabel!
     @IBOutlet weak var muscleExerciseLabel: UILabel!
+    @IBAction func addExerciseToRoutineButton(_ sender: UIButton) {
+        presenter?.addExcerciseToRoutine(nameExerciseLabel: nameExerciseLabel.text!, muscleExerciseLabel: muscleExerciseLabel.text!)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

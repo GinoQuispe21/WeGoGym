@@ -27,7 +27,6 @@ class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
     }
     
     func sendRoutines(_ array: [RoutineEntity]){
-//        print("mandamos los datos del presenter al view")
         view?.reciveData(array)
         router?.reciveRoutines(array)
     }

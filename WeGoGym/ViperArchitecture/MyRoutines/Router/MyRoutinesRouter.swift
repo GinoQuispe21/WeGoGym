@@ -26,14 +26,6 @@ class MyRoutineRouter : MyRoutineRouterProtocol{
     }
     
     func reciveRoutines(_ array: [RoutineEntity]) {
-//        print(">>>> Mi routine response en Router:  \(array)")
-//        let viewController = UIViewController()
-//        view?.present(viewController, animated: true)
-        
-//        NO DEBE SER DEPENTIENDE A CLASES CONCRETAS -> LISKOV
-//        let detail = RoutineDetail(name: array.first!.name)
-//        let detailRoutineViewController = DetailConfigurator.make(detail)
-//        view?.present(detailRoutineViewController, animated: true)
     }
     
     func showDetailView(_ routine: RoutineEntity){
@@ -49,7 +41,6 @@ class MyRoutineRouter : MyRoutineRouterProtocol{
         view?.navigationController?.pushViewController(detailRoutineViewController, animated: true)
     }
     func showAddRoutineView() {
-        print("ahora presentamos la add rutina view controller")
         createRoutineConfigurator = CreateRoutineConfigurator()
 //        paso 3
         createRoutineConfigurator?.delegate = self

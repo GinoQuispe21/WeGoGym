@@ -26,7 +26,6 @@ extension CreateRoutineInteractor : CreateRoutineInteractorProtocol {
     func allExcercises() {
         if let allExercises = api?.fetchAllExercises() {
             let allExercisesEntities = ExerciseEntity.make(allExercises)
-            print(allExercisesEntities)
             presenter?.sendRoutines(allExercisesEntities)
         }
     }

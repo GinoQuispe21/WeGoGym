@@ -28,7 +28,6 @@ class MyRoutinesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print("pedimos rutinas a presenter")
         presenter?.giveRoutines()
         myRoutinesTableView.dataSource = self
         myRoutinesTableView.delegate = self

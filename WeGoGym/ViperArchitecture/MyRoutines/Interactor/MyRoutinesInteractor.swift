@@ -22,21 +22,6 @@ class MyRoutinesInteractor : MyRoutinesInteractorProtocol{
     }
     
     func reciveDataFromApi() {
-//        print("asignamos los datos al presenter")
-//        var array: [String] = []
-////        switch option {
-////        case 0:
-////            array = ["0", "0", "0"]
-////            return
-////        case 1:
-////            array = ["1", "1", "1"]
-////        case 2:
-////            array = ["2", "2", "2"]
-////        default:
-////            array = []
-////        }
-//        let routine = api?.fetchRoutines()
-//        print(routine?.first)
         if let routines = api?.fetchRoutines(){
             let routinesEntities = RoutineEntity.make(routines)
             presenter?.sendRoutines(routinesEntities)
