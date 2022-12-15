@@ -11,6 +11,7 @@ import UIKit
 protocol CreaterRoutineRouterProtocol {
     func closeViewController()
     func showCreateRoutineAlert(name: String, description: String, time: Int, countExercises: Int, excercises: [ExcerciseStruct])
+    func showAlertEmptyInputs()
 }
 
 class CreateRoutineRouter {
@@ -24,6 +25,7 @@ class CreateRoutineRouter {
 }
 
 extension CreateRoutineRouter: CreaterRoutineRouterProtocol {
+    
     func showCreateRoutineAlert(name: String, description: String, time: Int, countExercises: Int, excercises: [ExcerciseStruct]) {
         print("aqui vamos a hacer tu alert")
         view?.dismiss(animated: true)
@@ -33,5 +35,11 @@ extension CreateRoutineRouter: CreaterRoutineRouterProtocol {
     
     func closeViewController() {
         view?.dismiss(animated: true)
+    }
+    
+    func showAlertEmptyInputs() {
+        let alert = UIAlertController(title: "Datos incompletos", message: "Validar que los datos solicitados esten completos para registrar su nueva rutina", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .default))
+        view?.present(alert, animated: true)
     }
 }

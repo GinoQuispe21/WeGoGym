@@ -27,7 +27,7 @@ class RoutineDetailViewController: UIViewController {
         excercisesCollectionView.delegate = self
         excercisesCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
         titleRoutineLabel.text = presenter?.getName()
-        authorRoutineLabel.text = presenter?.getAuthor()
+        authorRoutineLabel.text = "Creado por: \(presenter?.getAuthor() ?? "")"
         descriptionRoutineLabel.text = presenter?.getDescription()
         countExcercisesLabel.text = "\((presenter?.getCountExcercises()) ?? 00) ejercicios"
         timeRoutineLabel.text = "\(presenter?.getTime() ?? 0) minutos"

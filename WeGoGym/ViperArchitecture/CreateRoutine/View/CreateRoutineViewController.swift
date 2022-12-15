@@ -13,7 +13,9 @@ protocol CreateRoutineViewControllerProtocol {
 
 class CreateRoutineViewController: UIViewController {
     
-    var arrayTableView : [ExerciseEntity] = []
+    private var arrayExercises : [ExcerciseStruct] = []
+    private var arrayTableView : [ExerciseEntity] = []
+    
     var presenter: CreateRoutinePresenterProtocol?
     
     @IBAction private func closeCreateRoutineButton(_ sender: UIBarButtonItem) {
@@ -21,13 +23,13 @@ class CreateRoutineViewController: UIViewController {
     }
     
     @IBAction func createeRoutineButton(_ sender: UIBarButtonItem) {
-        presenter?.addRoutine(name: nameRoutineTextField.text, description: descriptionRoutineTextField.text, time: 0, countExercises: 0, excercises: [])
+        presenter?.addRoutine(name: nameRoutineTextField.text, description: descriptionRoutineTextField.text, excercises: [])
     }
     
-    @IBOutlet weak var nameRoutineTextField: UITextField!
-    @IBOutlet weak var descriptionRoutineTextField: UITextField!
-    @IBOutlet weak var exercisesAddedCollectionView: UICollectionView!
-    @IBOutlet weak var allExercisesTableView: UITableView!
+    @IBOutlet weak private var nameRoutineTextField: UITextField!
+    @IBOutlet weak private var descriptionRoutineTextField: UITextField!
+    @IBOutlet weak private var exercisesAddedCollectionView: UICollectionView!
+    @IBOutlet weak private var allExercisesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +44,7 @@ class CreateRoutineViewController: UIViewController {
 
 extension CreateRoutineViewController : UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return arrayExercises.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

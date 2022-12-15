@@ -8,22 +8,22 @@
 import Foundation
 
 protocol MyRoutinesPresenterProtocol {
-    func giveRoutines(_ option: Int)
+    func giveRoutines()
     func sendRoutines(_ array: [RoutineEntity])
     func showDetailOfRoutineSelected(_ routine: RoutineEntity)
-    func showAddRoutineViewController()
+    func showAddRoutineViewController(_ myRoutines: [RoutineEntity])
     func reciveNewRoutine(_ nameRoutine: RoutineEntity)
 }
 
 class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
     
+    private var array: [RoutineEntity] = []
     var router: MyRoutineRouterProtocol?
     var interactor: MyRoutinesInteractorProtocol?
     var view: MyRoutinesViewControllerProtocol?
     
-    func giveRoutines(_ option: Int) {
-//        print("pedimos rutinas al interactor")
-        interactor?.reciveDataFromApi(option)
+    func giveRoutines() {
+        interactor?.reciveDataFromApi()
     }
     
     func sendRoutines(_ array: [RoutineEntity]){
@@ -36,11 +36,15 @@ class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
         router?.showDetailView(routine)
     }
     
-    func showAddRoutineViewController() {
+    func showAddRoutineViewController(_ myRoutines: [RoutineEntity]) {
+        array = myRoutines
         router?.showAddRoutineView()
     }
     
+//    func reciveNewRoutine(_ nameRoutine: RoutineEntity) {
     func reciveNewRoutine(_ nameRoutine: RoutineEntity) {
-        view?.getNewRoutine(nameRoutine)
+        array.append(nameRoutine)
+        view?.getNewRoutine(array)
+//        view?.getNewRoutine(nameRoutine)
     }
 }

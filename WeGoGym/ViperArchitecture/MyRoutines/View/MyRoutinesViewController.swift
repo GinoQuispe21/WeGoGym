@@ -9,7 +9,7 @@ import UIKit
 
 protocol MyRoutinesViewControllerProtocol {
     func reciveData(_ array: [RoutineEntity])
-    func getNewRoutine(_ newRoutine: RoutineEntity)
+    func getNewRoutine(_ newRoutineArray: [RoutineEntity])
 }
 
 class MyRoutinesViewController: UIViewController {
@@ -19,14 +19,17 @@ class MyRoutinesViewController: UIViewController {
     
     @IBOutlet private weak var myRoutinesTableView: UITableView!
     @IBAction private func addRoutineButton(_ sender: UIButton) {
-        presenter?.showAddRoutineViewController()
+        presenter?.showAddRoutineViewController(myRoutines)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.hidesBackButton = true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //        print("pedimos rutinas a presenter")
-        presenter?.giveRoutines(2)
-        
+        presenter?.giveRoutines()
         myRoutinesTableView.dataSource = self
         myRoutinesTableView.delegate = self
         
@@ -59,15 +62,14 @@ extension MyRoutinesViewController : UITableViewDataSource, UITableViewDelegate 
 }
 
 extension MyRoutinesViewController: MyRoutinesViewControllerProtocol {
-    func getNewRoutine(_ newRoutine: RoutineEntity) {
+    func getNewRoutine(_ newRoutineArray: [RoutineEntity]) {
 //        en duda si esto se hace aqui
-        self.myRoutines.append(newRoutine)
+//        myRoutines.apppend(obect of routineEntity)
+        self.myRoutines = newRoutineArray
         myRoutinesTableView.reloadData()
     }
     
     func reciveData(_ array: [RoutineEntity]) {
-//        print("recibimos los datos del presenter en el view")
-//        print(array)
         self.myRoutines = array
     }
 }

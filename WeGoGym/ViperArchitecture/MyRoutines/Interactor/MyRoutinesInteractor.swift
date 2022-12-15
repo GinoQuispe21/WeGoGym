@@ -8,7 +8,7 @@
 import Foundation
 
 protocol MyRoutinesInteractorProtocol {
-    func reciveDataFromApi(_ option: Int)
+    func reciveDataFromApi()
 }
 
 class MyRoutinesInteractor : MyRoutinesInteractorProtocol{
@@ -21,7 +21,7 @@ class MyRoutinesInteractor : MyRoutinesInteractorProtocol{
         self.api = api
     }
     
-    func reciveDataFromApi(_ option: Int) {
+    func reciveDataFromApi() {
 //        print("asignamos los datos al presenter")
 //        var array: [String] = []
 ////        switch option {
