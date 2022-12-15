@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Press de banca",
+        "descripcion": "El press de banca activa los músculos del pecho, sobre todo el músculo pectoral mayor (los pectorales), un músculo de gran tamaño situado en la parte superior del pecho. El press de banca es un ejercicio compuesto, lo que significa que al hacerlo se utilizan varios músculos de forma simultánea.",
+        "muscle": "Pectoral"
+    },
+    {
+        "name": "Press militar",
+        "descripcion": "Los músculos más implicados en el press militar con mancuernas son el deltoides anterior, la porción medial y los tríceps. Y al hacerlo de pie conseguimos que tenga que haber una buena implicación de los glúteos y abdominales para no arquear la espalda.",
+        "muscle": "Hombros"
+    },
+    {
+        "name": "Sentadilla con barra",
+        "descripcion": "Es un poco más fácil levantar más peso y es excelente para desarrollar fuerza. Este estilo de sentadilla realmente puede desarrollar los glúteos, los isquiotibiales y los extensores de la espalda, ya que requieren más activación que los cuádriceps.",
+        "muscle": "Piernas"
+    },
+    {
+        "name": "Cruce de poleas",
+        "descripcion": "El cruce de poleas es un ejercicio que solicita principalmente el trabajo del pecho, es decir, los pectorales mayores. Si elevamos más los brazos y cambiamos el ángulo de inclinación del torso estaremos trabajando diferentes haces del pectoral mayor.",
+        "muscle": "Pectoral"
+    },
+    {
+        "name": "Rompe craneos para tricep",
+        "descripcion": "Echar hacia atrás los brazos mientras bajas la barra hacia la frente y luego desplazar hacia delante los brazos mientras levantas el peso puede resultar tentador, pero resta atención al tríceps e involucra a los dorsales. Tu objetivo es mover solo los codos para potenciar al máximo el trabajo de tus tríceps.",
+        "muscle": "Tricep"
+    },
+    {
+        "name": "Peso muerto",
+        "descripcion": "La técnica peso muerto trabaja un gran número de grupos musculares. Entre ellos los del área inferior de la espalda e isquiotibiales, tonificando glúteos, gemelos y cuádriceps así como en el área superior de la espalda y los brazos además de los trapecios, los músculos erectores de la columna y la cadera.",
+        "muscle": "Cadena Posterior"
+    },
+    {
+        "name": "Dominadas",
+        "descripcion": "Algunos de los músculos que se trabajan en las dominadas son: dorsal mayor, dorsal, trapecio, romboides, pectoral mayor y menor, deltoides, infraespinoso, bíceps, bíceps braquial, oblicuo externo, tríceps y pectoral, entre otros.",
+        "muscle": "Espalda"
+    },
+    {
+        "name": "Remo con barra",
+        "descripcion": "El remo con barra es un excelente ejercicio para fortalecer los músculos de la espalda. Más específicamente, trabajarás los músculos de la parte media y superior de la espalda, como los dorsales, romboides, trapecios y deltoides posteriores.",
+        "muscle": "Espalda"
+    },
+    {
+        "name": "Curl de bicep",
+        "descripcion": "Sujeta las pesas con un agarre supino (las palmas de las manos mirando hacia arriba) y asegúrate de que tu antebrazo y el suelo están colocados de forma paralela. Aprieta el bíceps para realizar el curl y baja la mancuerna. Después, vuelve a la posición inicial manteniendo el control. Repite con el otro brazo.",
+        "muscle": "Bicep"
+    },
+    {
+        "name": "Elevaciones laterales",
+        "descripcion": "Las elevaciones laterales de brazos con mancuernas te van a ayudar a trabajar la fuerza y la resistencia de los hombros, los deltoides y los trapecios, con lo que resultan el ejercicio ideal para incorporar a tu rutina para fortalecer el tren superior.",
+        "muscle": "Hombros"
+    },
+    {
+        "name": "Press inclinado",
+        "descripcion": "Con referencia a su nombre, el press inclinado se enfoca en la parte superior del pecho, mayormente en la parte de arriba del pectoral mayor, que está compuesto de las cabezas clavicular y esternocostal, también conocidos como el pecho superior e inferior.",
+        "muscle": "Pectoral"
+    },
+    {
+        "name": "Curl de femoral",
+        "descripcion": "El curl femoral tumbado es un tipo de entrenamiento con pesas de aislamiento cuyo músculo-objetivo es el entrenamiento del femoral de la pierna (músculos de la parte posterior de los muslos, denominados también isquiotibiales). Este ejercicio se suele complementar con la extensión de pierna.",
+        "muscle": "Piernas"
+    },
+    {
+        "name": "Extensión de cuadriceps",
+        "descripcion": "Siéntate en una silla y apoya los pies en el suelo separados el ancho de las caderas. Mantén la espalda recta. Extiende la rodilla izquierda hacia delante y contrae los músculos del cuádriceps. Vuelve a la posición inicial y repite las veces indicadas.",
+        "muscle": "Piernas"
+    },
+    {
+        "name": "Sentadilla con hack squat",
+        "descripcion": "Consiste en trabajar con el peso muerto de los discos que están en el piso y deben ser levantados. El esfuerzo se centra en las piernas flexionadas y la espalda, que permanece recta. Básicamente, es como si se estuviera sentado mientras se levantan las pesas. El empuje debe realizarse con los talones y muslos.",
+        "muscle": "Piernas"
+    },
+    {
+        "name": "Fondos en paralela",
+        "descripcion": "Los fondos en paralelas son un ejercicios de autocarga perfecto para trabajar el pecho y los triceps. Su mayor problema es que si el ejercicio no se realiza de forma correcta podemos acabar lesionados en la articulación del hombro o el codo.",
+        "muscle": "Pectoral"
+    },
+    {
+        "name": "Extension en polea",
+        "descripcion": "Realizamos una extensión de los codos, llevando el mango de la polea hacia abajo, sin despegar los codos de los lados del cuerpo y únicamente movilizando el antebrazo. Espiramos al final del movimiento y regresamos lentamente a la posición inicial.",
+        "muscle": "Tricep"
+    },
+]

@@ -7,9 +7,8 @@
 
 import Foundation
 
-struct ExcerciseStruct: Decodable {
+public struct ExcerciseStruct: Decodable {
     let name: String
-    let description: String
     let muscle: String
     let series: Int
     let reps: Int

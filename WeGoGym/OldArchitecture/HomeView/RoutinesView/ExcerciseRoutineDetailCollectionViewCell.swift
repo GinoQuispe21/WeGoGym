@@ -21,4 +21,10 @@ class ExcerciseRoutineDetailCollectionViewCell: UICollectionViewCell {
         repsLabel.text = "\(String(excercise.reps)) Repeticiones"
     }
     
+    func setupValuesEntity(excercise: ExcerciseStruct) {
+        titleLabel.text = excercise.name
+        seriesLabel.text = "\(String(excercise.series)) Sets"
+        repsLabel.text = "\(String(excercise.reps)) Repeticiones"
+    }
+    
 }

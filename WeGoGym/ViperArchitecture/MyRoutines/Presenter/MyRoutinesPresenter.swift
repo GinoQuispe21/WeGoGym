@@ -10,6 +10,9 @@ import Foundation
 protocol MyRoutinesPresenterProtocol {
     func giveRoutines(_ option: Int)
     func sendRoutines(_ array: [RoutineEntity])
+    func showDetailOfRoutineSelected(_ routine: RoutineEntity)
+    func showAddRoutineViewController()
+    func reciveNewRoutine(_ nameRoutine: String)
 }
 
 class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
@@ -29,4 +32,15 @@ class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
         router?.reciveRoutines(array)
     }
     
+    func showDetailOfRoutineSelected(_ routine: RoutineEntity) {
+        router?.showDetailView(routine)
+    }
+    
+    func showAddRoutineViewController() {
+        router?.showAddRoutineView()
+    }
+    
+    func reciveNewRoutine(_ nameRoutine: String) {
+        view?.getNewRoutine(nameRoutine)
+    }
 }
