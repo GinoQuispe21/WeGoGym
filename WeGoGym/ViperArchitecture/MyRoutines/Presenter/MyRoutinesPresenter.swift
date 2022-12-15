@@ -12,7 +12,7 @@ protocol MyRoutinesPresenterProtocol {
     func sendRoutines(_ array: [RoutineEntity])
     func showDetailOfRoutineSelected(_ routine: RoutineEntity)
     func showAddRoutineViewController()
-    func reciveNewRoutine(_ nameRoutine: String)
+    func reciveNewRoutine(_ nameRoutine: RoutineEntity)
 }
 
 class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
@@ -40,7 +40,7 @@ class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
         router?.showAddRoutineView()
     }
     
-    func reciveNewRoutine(_ nameRoutine: String) {
+    func reciveNewRoutine(_ nameRoutine: RoutineEntity) {
         view?.getNewRoutine(nameRoutine)
     }
 }

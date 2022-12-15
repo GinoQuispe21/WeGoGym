@@ -63,10 +63,8 @@ class MyRoutineRouter : MyRoutineRouterProtocol{
 // 1. adopoto el protocolo
 
 extension MyRoutineRouter: CreateRoutineConfiguratorDelegate {
-//    2. implementar metodos
-    func createRoutineConfiguratorDelegate(didCreate nameRoutine: String) {
+    //    2. implementar metodos
+    func createRoutineConfiguratorDelegate(didCreate nameRoutine: RoutineEntity) {
         presenter?.reciveNewRoutine(nameRoutine)
     }
-    
-    
 }

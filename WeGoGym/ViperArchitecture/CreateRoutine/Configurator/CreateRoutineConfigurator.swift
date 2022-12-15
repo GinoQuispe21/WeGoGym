@@ -10,7 +10,7 @@ import UIKit
 
 public protocol CreateRoutineConfiguratorDelegate {
 //    aca deberiamos mandar viewController: UIVIEWCONTROLLER segun video de franti
-    func createRoutineConfiguratorDelegate(didCreate nameRoutine: String)
+    func createRoutineConfiguratorDelegate(didCreate nameRoutine: RoutineEntity)
 }
 
 public class CreateRoutineConfigurator {

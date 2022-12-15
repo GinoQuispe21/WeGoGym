@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RoutineEntity {
+public struct RoutineEntity {
     let name: String
     let description: String
     let author: String

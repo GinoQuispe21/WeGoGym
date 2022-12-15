@@ -9,7 +9,7 @@ import UIKit
 
 protocol MyRoutinesViewControllerProtocol {
     func reciveData(_ array: [RoutineEntity])
-    func getNewRoutine(_ nameRoutine: String)
+    func getNewRoutine(_ newRoutine: RoutineEntity)
 }
 
 class MyRoutinesViewController: UIViewController {
@@ -59,8 +59,10 @@ extension MyRoutinesViewController : UITableViewDataSource, UITableViewDelegate 
 }
 
 extension MyRoutinesViewController: MyRoutinesViewControllerProtocol {
-    func getNewRoutine(_ nameRoutine: String) {
-        print("hola mi querido chupapimuñaño \(nameRoutine)")
+    func getNewRoutine(_ newRoutine: RoutineEntity) {
+//        en duda si esto se hace aqui
+        self.myRoutines.append(newRoutine)
+        myRoutinesTableView.reloadData()
     }
     
     func reciveData(_ array: [RoutineEntity]) {

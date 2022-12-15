@@ -10,7 +10,7 @@ import UIKit
 
 protocol CreaterRoutineRouterProtocol {
     func closeViewController()
-    func showCreateRoutineAlert()
+    func showCreateRoutineAlert(name: String, description: String, time: Int, countExercises: Int, excercises: [ExcerciseStruct])
 }
 
 class CreateRoutineRouter {
@@ -24,11 +24,11 @@ class CreateRoutineRouter {
 }
 
 extension CreateRoutineRouter: CreaterRoutineRouterProtocol {
-    func showCreateRoutineAlert() {
-        print("aqui vamos a hacer tu alert y la otra wbda")
+    func showCreateRoutineAlert(name: String, description: String, time: Int, countExercises: Int, excercises: [ExcerciseStruct]) {
+        print("aqui vamos a hacer tu alert")
         view?.dismiss(animated: true)
-        let au = "au"
-        delegate.createRoutineConfiguratorDelegate(didCreate: au)
+        let newRoutine = RoutineEntity(name: name, description: description, author: "mi", time: time, exercises: excercises)
+        delegate.createRoutineConfiguratorDelegate(didCreate: newRoutine)
     }
     
     func closeViewController() {

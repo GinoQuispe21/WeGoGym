@@ -11,7 +11,7 @@ protocol CreateRoutinePresenterProtocol {
     func sendRoutines(_ arrayAllExercises: [ExerciseEntity])
     func getAllExercises()
     func closeModal()
-    func addRoutine()
+    func addRoutine(name: String?, description: String?, time: Int?, countExercises: Int?, excercises: [ExcerciseStruct]?)
 }
 
 class CreateRoutinePresenter {
@@ -23,8 +23,11 @@ class CreateRoutinePresenter {
 }
 
 extension CreateRoutinePresenter : CreateRoutinePresenterProtocol {
-    func addRoutine() {
-        router?.showCreateRoutineAlert()
+    func addRoutine(name: String?, description: String?, time: Int?, countExercises: Int?, excercises: [ExcerciseStruct]?){
+        if let nameAux = name, let descrAux = description, let timeAux = time, let counAux = countExercises, let exceAux = excercises {
+//            validar si no estan vacios los inputs
+            router?.showCreateRoutineAlert(name: nameAux, description: descrAux, time: timeAux, countExercises: counAux, excercises: exceAux)
+        }
     }
     
     func sendRoutines(_ arrayAllExercises: [ExerciseEntity]) {

@@ -21,7 +21,7 @@ class CreateRoutineViewController: UIViewController {
     }
     
     @IBAction func createeRoutineButton(_ sender: UIBarButtonItem) {
-        presenter?.addRoutine()
+        presenter?.addRoutine(name: nameRoutineTextField.text, description: descriptionRoutineTextField.text, time: 0, countExercises: 0, excercises: [])
     }
     
     @IBOutlet weak var nameRoutineTextField: UITextField!
