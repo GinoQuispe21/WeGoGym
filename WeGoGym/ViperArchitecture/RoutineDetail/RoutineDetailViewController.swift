@@ -21,6 +21,10 @@ class RoutineDetailViewController: UIViewController {
     @IBOutlet private weak var timeRoutineLabel: UILabel!
     @IBOutlet private weak var excercisesCollectionView: UICollectionView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         excercisesCollectionView.dataSource = self

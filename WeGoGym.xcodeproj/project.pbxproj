@@ -182,8 +182,6 @@
 		7E0C60A72946D10A00A7A529 /* OldArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				7E0042EB293159BF006157AD /* AppDelegate.swift */,
-				7E0042ED293159BF006157AD /* SceneDelegate.swift */,
 				7E0042EF293159BF006157AD /* ViewController.swift */,
 				7EB687D7293D0019001BE573 /* SignInView */,
 				7EB687D8293D0034001BE573 /* SignUpView */,
@@ -201,6 +199,8 @@
 				7E247B9B29493BEE00B4E094 /* RoutineDetail */,
 				7E0C60A92946D1FF00A7A529 /* MyRoutines */,
 				7E29F04B29478EAD0037D2BF /* TemplateViewController.swift */,
+				7E0042EB293159BF006157AD /* AppDelegate.swift */,
+				7E0042ED293159BF006157AD /* SceneDelegate.swift */,
 			);
 			path = ViperArchitecture;
 			sourceTree = "<group>";

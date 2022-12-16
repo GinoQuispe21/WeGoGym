@@ -20,6 +20,7 @@ protocol CreateRoutinePresenterProtocol {
     func showViewBehindCollectionView( elements: Int, exercisesAddedCollectionView: UICollectionView)
     func showAlertUpdate(_ indexCell: Int)
     func reciveUpdatedExercise(_ seriesToUpdate: Int,_ repsToUpdate: Int,_ indexCell: Int)
+    func updateTableViewWithSearch(_ searchText: String, _ arrayTableView: [ExerciseEntity])
 }
 
 class CreateRoutinePresenter {
@@ -91,6 +92,18 @@ extension CreateRoutinePresenter : CreateRoutinePresenterProtocol {
         self.auxArrayExercises[indexCell].reps = repsToUpdate
         view?.updateArrayExercise(auxArrayExercises, auxArrayExercises.count)
     }
+    
+    func updateTableViewWithSearch(_ searchText: String,_ arrayTableView: [ExerciseEntity]) {
+        var aux : [ExerciseEntity] = []
+        if searchText == "" { aux = arrayTableView }
+        for word in arrayTableView {
+            if word.name.lowercased().contains(searchText.lowercased()) || word.muscle.lowercased().contains(searchText.lowercased()) {
+                aux.append(word)
+            }
+        }
+        view?.reciveExercisesSearched(aux)
+    }
+    
 }
 
 

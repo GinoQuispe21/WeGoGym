@@ -16,7 +16,8 @@ protocol MyRoutinesPresenterProtocol : AnyObject {
     func reciveNewRoutine(_ nameRoutine: RoutineEntity)
     func showAlertDeleteRoutine(_ index: Int)
     func confirmDeleteRoutine(_ index: Int)
-    func showViewBehindTableView(_ elements: Int, _ myRoutinesTableView: UITableView)
+    func showViewBehindTableView(_ elements: Int,_ myRoutinesTableView: UITableView)
+    func searchTextRoutineTableView(_ text: String,_ arrayRoutines: [RoutineEntity],_ myRoutinesTableView: UITableView)
 }
 
 class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
@@ -61,9 +62,19 @@ class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
     
     func showViewBehindTableView(_ elements: Int, _ myRoutinesTableView: UITableView) {
         if elements == 0 {
-            myRoutinesTableView.setEmptyView(title: "No tienes rutinas creadas ni asignadas.", message: "Crea tu rutina o inscribete a un gimnasio y aqui verás tus rutinas")
+            myRoutinesTableView.setEmptyView(title: "No se encontraron rutinas :(", message: "Crea tu rutina a tu medida asignando ejercicos que te gusten")
         } else {
             myRoutinesTableView.restore()
         }
+    }
+    func searchTextRoutineTableView(_ text: String,_ arrayRoutines: [RoutineEntity],_ myRoutinesTableView: UITableView) {
+        var aux : [RoutineEntity] = []
+        if text == "" { aux = arrayRoutines }
+        for word in arrayRoutines {
+            if word.name.lowercased().contains(text.lowercased()) || word.author.lowercased().contains(text.lowercased()) {
+                aux.append(word)
+            }
+        }
+        view?.updateRoutinesSearched(aux)
     }
 }

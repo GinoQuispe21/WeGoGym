@@ -10,12 +10,14 @@ import UIKit
 protocol CreateRoutineViewControllerProtocol {
     func reciveRoutines(_ arrayAllExercises: [ExerciseEntity])
     func updateArrayExercise(_ newArrayExercises: [ExcerciseStruct], _ countExercisesArray: Int)
+    func reciveExercisesSearched(_ searchedExercises: [ExerciseEntity])
 }
 
 class CreateRoutineViewController: UIViewController {
     
     private var arrayExercises : [ExcerciseStruct] = []
     private var arrayTableView : [ExerciseEntity] = []
+    private var backup: [ExerciseEntity] = []
     
     var presenter: CreateRoutinePresenterProtocol?
     
@@ -32,16 +34,17 @@ class CreateRoutineViewController: UIViewController {
     @IBOutlet weak private var exercisesAddedCollectionView: UICollectionView!
     @IBOutlet weak private var allExercisesTableView: UITableView!
     @IBOutlet weak private var countExerciseLabel: UILabel!
-    
-    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var exercuseSearchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         nameRoutineTextField.placeholder = "Nombre de la rutina"
         descriptionRoutineTextField.placeholder = "Descripción de la rutina"
-        searchTextField.placeholder = "Musuclo, nombre de ejercicio"
+        exercuseSearchBar.placeholder = "Nombre de ejercicio, musculo"
         allExercisesTableView.dataSource = self
+        allExercisesTableView.delegate = self
         exercisesAddedCollectionView.dataSource = self
+        exercuseSearchBar.delegate = self
         presenter?.getAllExercises()
     }
 
@@ -71,9 +74,9 @@ extension CreateRoutineViewController : UICollectionViewDataSource, UICollection
 }
 
 
-extension CreateRoutineViewController : UITableViewDataSource {
+extension CreateRoutineViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayTableView.count
+        return backup.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,19 +84,31 @@ extension CreateRoutineViewController : UITableViewDataSource {
             return UITableViewCell()
         }
         cell.presenter = presenter
-        cell.setupValues(arrayTableView[indexPath.row])
+        cell.setupValues(backup[indexPath.row])
         return cell
     }
 }
 
 extension CreateRoutineViewController : CreateRoutineViewControllerProtocol {
+    
     func reciveRoutines(_ arrayAllExercises: [ExerciseEntity]) {
         self.arrayTableView = arrayAllExercises
+        self.backup = arrayTableView
     }
     func updateArrayExercise(_ newArrayExercises: [ExcerciseStruct], _ countExercisesArray: Int){
         countExerciseLabel.text = "\(countExercisesArray) ejercicios"
         self.arrayExercises = newArrayExercises
         self.exercisesAddedCollectionView.reloadData()
+    }
+    func reciveExercisesSearched(_ searchedExercises: [ExerciseEntity]) {
+        backup = searchedExercises
+        allExercisesTableView.reloadData()
+    }
+}
+
+extension CreateRoutineViewController : UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        presenter?.updateTableViewWithSearch(searchText,arrayTableView)
     }
 }
 

@@ -10,20 +10,24 @@ import UIKit
 protocol MyRoutinesViewControllerProtocol {
     func reciveData(_ array: [RoutineEntity])
     func getNewRoutine(_ newRoutineArray: [RoutineEntity])
+    func updateRoutinesSearched(_ arrayExercises: [RoutineEntity])
 }
 
 class MyRoutinesViewController: UIViewController {
 
     var presenter: MyRoutinesPresenterProtocol?
     var myRoutines: [RoutineEntity] = []
+    var backup: [RoutineEntity] = []
     
     @IBOutlet private weak var myRoutinesTableView: UITableView!
     @IBAction private func addRoutineButton(_ sender: UIButton) {
         presenter?.showAddRoutineViewController()
     }
+    @IBOutlet weak var routineSearchBar: UISearchBar!
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.hidesBackButton = true
+//        navigationItem.hidesBackButton = true
+        navigationController?.isNavigationBarHidden = true
     }
     
     override func viewDidLoad() {
@@ -31,6 +35,7 @@ class MyRoutinesViewController: UIViewController {
         presenter?.giveRoutines(myRoutines)
         myRoutinesTableView.dataSource = self
         myRoutinesTableView.delegate = self
+        routineSearchBar.delegate = self
         
         let nib = UINib(nibName: "RoutineTableViewCell", bundle: nil)
         myRoutinesTableView.register(nib, forCellReuseIdentifier: "routineCell")
@@ -40,8 +45,8 @@ class MyRoutinesViewController: UIViewController {
 extension MyRoutinesViewController : UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        presenter?.showViewBehindTableView(myRoutines.count, myRoutinesTableView)
-        return myRoutines.count
+        presenter?.showViewBehindTableView(backup.count, myRoutinesTableView)
+        return backup.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,7 +55,7 @@ extension MyRoutinesViewController : UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "routineCell", for: indexPath) as? RoutineTableViewCell else {return UITableViewCell()}
-        let routine = myRoutines[indexPath.section]
+        let routine = backup[indexPath.section]
         cell.index = indexPath.section
         cell.presenter = presenter
         cell.setupEntity(routine)
@@ -66,11 +71,23 @@ extension MyRoutinesViewController : UITableViewDataSource, UITableViewDelegate 
 extension MyRoutinesViewController: MyRoutinesViewControllerProtocol {
     func getNewRoutine(_ newRoutineArray: [RoutineEntity]) {
         self.myRoutines = newRoutineArray
+        backup = myRoutines
         myRoutinesTableView.reloadData()
     }
     
     func reciveData(_ array: [RoutineEntity]) {
-        self.myRoutines = array
+        myRoutines = array
+        backup = myRoutines
+    }
+    func updateRoutinesSearched(_ arrayExercises: [RoutineEntity]){
+        backup = arrayExercises
+        myRoutinesTableView.reloadData()
+    }
+}
+
+extension MyRoutinesViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        presenter?.searchTextRoutineTableView(searchText, myRoutines, myRoutinesTableView)
     }
 }
 
@@ -83,7 +100,7 @@ extension UITableView {
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.textColor = UIColor.black
         titleLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
-        messageLabel.textColor = UIColor.lightGray
+        messageLabel.textColor = UIColor.gray
         messageLabel.font = UIFont(name: "HelveticaNeue-Regular", size: 17)
         emptyView.addSubview(titleLabel)
         emptyView.addSubview(messageLabel)
