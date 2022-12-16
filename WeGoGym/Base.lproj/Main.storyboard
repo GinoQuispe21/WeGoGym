@@ -478,17 +478,8 @@ o usa las recomendadas</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 minutos" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bof-Gf-Brs">
-                                <rect key="frame" x="266" y="267" width="97" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="wFW-bA-jcN"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lista de Ejercicios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPe-1I-oPk">
-                                <rect key="frame" x="30" y="433" width="137" height="21"/>
+                                <rect key="frame" x="30" y="417" width="137" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="137" id="AKB-bP-Pl3"/>
                                 </constraints>
@@ -497,12 +488,12 @@ o usa las recomendadas</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0D6-az-9Df">
-                                <rect key="frame" x="30" y="469" width="333" height="34"/>
+                                <rect key="frame" x="30" y="453" width="333" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="N6H-XJ-ZZc">
-                                <rect key="frame" x="10" y="513" width="373" height="285"/>
+                                <rect key="frame" x="10" y="497" width="373" height="301"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="createRoutineExerciseTableViewCell" rowHeight="41" id="y2n-7X-ITS" customClass="CreateRoutineExerciseTableViewCell" customModule="WeGoGym" customModuleProvider="target">
@@ -563,7 +554,7 @@ o usa las recomendadas</string>
                                 </prototypes>
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="y4o-mW-o51">
-                                <rect key="frame" x="30" y="298" width="333" height="125"/>
+                                <rect key="frame" x="30" y="282" width="333" height="125"/>
                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="333" id="F7b-nh-po5"/>
@@ -659,7 +650,6 @@ o usa las recomendadas</string>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
-                            <constraint firstItem="bof-Gf-Brs" firstAttribute="top" secondItem="kTT-ZM-NsV" secondAttribute="bottom" constant="5" id="1Cp-1h-4SK"/>
                             <constraint firstItem="5xb-wl-yY5" firstAttribute="leading" secondItem="3o6-Vj-rwO" secondAttribute="leading" constant="30" id="3Pp-4z-ZMw"/>
                             <constraint firstItem="N6H-XJ-ZZc" firstAttribute="leading" secondItem="3o6-Vj-rwO" secondAttribute="leading" constant="10" id="5P5-z7-2Oy"/>
                             <constraint firstItem="5xb-wl-yY5" firstAttribute="top" secondItem="TeV-lt-EYA" secondAttribute="bottom" constant="20" id="6sE-yE-iIq"/>
@@ -669,7 +659,6 @@ o usa las recomendadas</string>
                             <constraint firstAttribute="trailing" secondItem="y4o-mW-o51" secondAttribute="trailing" constant="30" id="GAy-Qa-fV0"/>
                             <constraint firstItem="Syv-YF-WM3" firstAttribute="top" secondItem="0VB-fg-QGc" secondAttribute="bottom" constant="30" id="HNY-JP-zI5"/>
                             <constraint firstItem="Syv-YF-WM3" firstAttribute="leading" secondItem="3o6-Vj-rwO" secondAttribute="leading" constant="30" id="Jog-IC-eEl"/>
-                            <constraint firstAttribute="trailing" secondItem="bof-Gf-Brs" secondAttribute="trailing" constant="30" id="Li4-3e-q3Y"/>
                             <constraint firstItem="uPe-1I-oPk" firstAttribute="top" secondItem="y4o-mW-o51" secondAttribute="bottom" constant="10" id="Lxc-a8-Nsk"/>
                             <constraint firstItem="0VB-fg-QGc" firstAttribute="top" secondItem="5xb-wl-yY5" secondAttribute="bottom" constant="20" id="OJs-vn-lHw"/>
                             <constraint firstItem="y4o-mW-o51" firstAttribute="leading" secondItem="3o6-Vj-rwO" secondAttribute="leading" constant="30" id="Taz-xi-0ly"/>
@@ -677,8 +666,8 @@ o usa las recomendadas</string>
                             <constraint firstItem="0D6-az-9Df" firstAttribute="top" secondItem="uPe-1I-oPk" secondAttribute="bottom" constant="15" id="YZm-Ht-MqA"/>
                             <constraint firstItem="y4o-mW-o51" firstAttribute="leading" secondItem="uPe-1I-oPk" secondAttribute="leading" id="byf-mS-f0C"/>
                             <constraint firstItem="uPe-1I-oPk" firstAttribute="leading" secondItem="3o6-Vj-rwO" secondAttribute="leading" constant="30" id="fDs-B9-opT"/>
+                            <constraint firstItem="y4o-mW-o51" firstAttribute="top" secondItem="Syv-YF-WM3" secondAttribute="bottom" constant="20" id="fwF-v4-yFB"/>
                             <constraint firstItem="y4o-mW-o51" firstAttribute="trailing" secondItem="0D6-az-9Df" secondAttribute="trailing" id="gYU-Rg-jL8"/>
-                            <constraint firstItem="y4o-mW-o51" firstAttribute="top" secondItem="bof-Gf-Brs" secondAttribute="bottom" constant="10" id="k1M-fc-k9s"/>
                             <constraint firstAttribute="trailing" secondItem="N6H-XJ-ZZc" secondAttribute="trailing" constant="10" id="kDp-24-YiT"/>
                             <constraint firstAttribute="trailing" secondItem="0D6-az-9Df" secondAttribute="trailing" constant="30" id="kUs-9H-2mT"/>
                             <constraint firstAttribute="trailing" secondItem="kTT-ZM-NsV" secondAttribute="trailing" constant="30" id="ksK-3q-G4R"/>
@@ -704,6 +693,7 @@ o usa las recomendadas</string>
                     </navigationItem>
                     <connections>
                         <outlet property="allExercisesTableView" destination="N6H-XJ-ZZc" id="mUf-qd-ITc"/>
+                        <outlet property="countExerciseLabel" destination="kTT-ZM-NsV" id="NgL-Ax-EvO"/>
                         <outlet property="descriptionRoutineTextField" destination="0VB-fg-QGc" id="QWI-T3-g43"/>
                         <outlet property="exercisesAddedCollectionView" destination="y4o-mW-o51" id="d5b-ny-iQp"/>
                         <outlet property="nameRoutineTextField" destination="5xb-wl-yY5" id="GPb-6z-BLg"/>

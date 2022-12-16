@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol MyRoutinesPresenterProtocol : AnyObject {
     func giveRoutines(_ newRoutineArray: [RoutineEntity])
@@ -15,6 +16,7 @@ protocol MyRoutinesPresenterProtocol : AnyObject {
     func reciveNewRoutine(_ nameRoutine: RoutineEntity)
     func showAlertDeleteRoutine(_ index: Int)
     func confirmDeleteRoutine(_ index: Int)
+    func showViewBehindTableView(_ elements: Int, _ myRoutinesTableView: UITableView)
 }
 
 class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
@@ -57,4 +59,11 @@ class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
         view?.getNewRoutine(array)
     }
     
+    func showViewBehindTableView(_ elements: Int, _ myRoutinesTableView: UITableView) {
+        if elements == 0 {
+            myRoutinesTableView.setEmptyView(title: "No tienes rutinas creadas ni asignadas.", message: "Crea tu rutina o inscribete a un gimnasio y aqui verás tus rutinas")
+        } else {
+            myRoutinesTableView.restore()
+        }
+    }
 }

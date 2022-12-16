@@ -9,8 +9,8 @@ import UIKit
 
 protocol CreateRoutineViewControllerProtocol {
     func reciveRoutines(_ arrayAllExercises: [ExerciseEntity])
-    func reciveNewExercise(_ newArrayExercisesAdded: [ExcerciseStruct])
-    func deleteExercise(_ newArrayExerciseDeleted: [ExcerciseStruct])
+    func reciveNewExercise(_ newArrayExercisesAdded: [ExcerciseStruct], _ countExercisesArray: Int)
+    func deleteExercise(_ newArrayExerciseDeleted: [ExcerciseStruct], _ countExercisesArray: Int)
 }
 
 class CreateRoutineViewController: UIViewController {
@@ -24,7 +24,7 @@ class CreateRoutineViewController: UIViewController {
         presenter?.closeModal()
     }
     
-    @IBAction func createeRoutineButton(_ sender: UIBarButtonItem) {
+    @IBAction private func createeRoutineButton(_ sender: UIBarButtonItem) {
         presenter?.addRoutine(name: nameRoutineTextField.text, description: descriptionRoutineTextField.text, excercises: arrayExercises)
     }
     
@@ -32,6 +32,7 @@ class CreateRoutineViewController: UIViewController {
     @IBOutlet weak private var descriptionRoutineTextField: UITextField!
     @IBOutlet weak private var exercisesAddedCollectionView: UICollectionView!
     @IBOutlet weak private var allExercisesTableView: UITableView!
+    @IBOutlet weak private var countExerciseLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +47,9 @@ class CreateRoutineViewController: UIViewController {
 
 extension CreateRoutineViewController : UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        presenter?.showViewBehindCollectionView(elements: arrayExercises.count, exercisesAddedCollectionView: exercisesAddedCollectionView)
         return arrayExercises.count
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -83,17 +86,40 @@ extension CreateRoutineViewController : UITableViewDataSource {
 
 extension CreateRoutineViewController : CreateRoutineViewControllerProtocol {
     
-    func reciveNewExercise(_ newArrayExercisesAdded: [ExcerciseStruct]) {
+    func reciveNewExercise(_ newArrayExercisesAdded: [ExcerciseStruct],_ countExercisesArray: Int) {
+        countExerciseLabel.text = "\(countExercisesArray) ejercicios"
         self.arrayExercises = newArrayExercisesAdded
         self.exercisesAddedCollectionView.reloadData()
     }
     
-    func deleteExercise(_ newArrayExerciseDeleted: [ExcerciseStruct]) {
+    func deleteExercise(_ newArrayExerciseDeleted: [ExcerciseStruct], _ countExercisesArray: Int) {
+        countExerciseLabel.text = "\(countExercisesArray) ejercicios"
         self.arrayExercises = newArrayExerciseDeleted
         self.exercisesAddedCollectionView.reloadData()
     }
     
     func reciveRoutines(_ arrayAllExercises: [ExerciseEntity]) {
         self.arrayTableView = arrayAllExercises
+    }
+}
+
+extension UICollectionView {
+    func setEmptyView(message: String) {
+        let emptyView = UIView(frame: CGRect(x: self.center.x, y: self.center.y, width: self.bounds.size.width, height: self.bounds.size.height))
+        let messageLabel = UILabel()
+        messageLabel.translatesAutoresizingMaskIntoConstraints = false
+        messageLabel.textColor = UIColor.lightGray
+        emptyView.addSubview(messageLabel)
+        messageLabel.leftAnchor.constraint(equalTo: emptyView.leftAnchor, constant: 20).isActive = true
+        messageLabel.rightAnchor.constraint(equalTo: emptyView.rightAnchor, constant: -20).isActive = true
+        messageLabel.topAnchor.constraint(equalTo: emptyView.topAnchor, constant: 30).isActive = true
+        messageLabel.text = message
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        // The only tricky part is here:
+        self.backgroundView = emptyView
+    }
+    func restore() {
+        self.backgroundView = nil
     }
 }

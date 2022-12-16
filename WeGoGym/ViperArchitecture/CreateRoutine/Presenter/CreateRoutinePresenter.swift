@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol CreateRoutinePresenterProtocol {
     func sendRoutines(_ arrayAllExercises: [ExerciseEntity])
@@ -16,6 +17,7 @@ protocol CreateRoutinePresenterProtocol {
     func reciveNewExerciseToRoutine(_ newExercise: ExcerciseStruct)
     func deleteExerciseToRoutine(_ indexCell: Int)
     func reciveConfirmationDelete(_ indexCell: Int)
+    func showViewBehindCollectionView( elements: Int, exercisesAddedCollectionView: UICollectionView)
 }
 
 class CreateRoutinePresenter {
@@ -57,8 +59,9 @@ extension CreateRoutinePresenter : CreateRoutinePresenterProtocol {
     }
     
     func reciveNewExerciseToRoutine(_ newExercise: ExcerciseStruct) {
+//        counExcercisesLabel.text = "\(excercisesAddedArray.count) ejercicios"
         self.auxArrayExercises.append(newExercise)
-        view?.reciveNewExercise(auxArrayExercises)
+        view?.reciveNewExercise(auxArrayExercises, auxArrayExercises.count)
     }
     
     func deleteExerciseToRoutine(_ indexCell: Int) {
@@ -67,9 +70,15 @@ extension CreateRoutinePresenter : CreateRoutinePresenterProtocol {
     
     func reciveConfirmationDelete(_ indexCell: Int) {
         self.auxArrayExercises.remove(at: indexCell)
-        view?.deleteExercise(auxArrayExercises)
+        view?.deleteExercise(auxArrayExercises, auxArrayExercises.count)
     }
-    
+    func showViewBehindCollectionView(elements: Int, exercisesAddedCollectionView: UICollectionView) {
+        if elements == 0 {
+            exercisesAddedCollectionView.setEmptyView(message: "Agrega ejercicios a tu rutina en la secciòn abajo")
+        } else {
+            exercisesAddedCollectionView.restore()
+        }
+    }    
 }
 
 
