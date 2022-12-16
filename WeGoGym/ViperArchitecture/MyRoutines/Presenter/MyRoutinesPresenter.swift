@@ -7,12 +7,14 @@
 
 import Foundation
 
-protocol MyRoutinesPresenterProtocol {
-    func giveRoutines()
+protocol MyRoutinesPresenterProtocol : AnyObject {
+    func giveRoutines(_ newRoutineArray: [RoutineEntity])
     func sendRoutines(_ array: [RoutineEntity])
     func showDetailOfRoutineSelected(_ routine: RoutineEntity)
-    func showAddRoutineViewController(_ myRoutines: [RoutineEntity])
+    func showAddRoutineViewController()
     func reciveNewRoutine(_ nameRoutine: RoutineEntity)
+    func showAlertDeleteRoutine(_ index: Int)
+    func confirmDeleteRoutine(_ index: Int)
 }
 
 class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
@@ -22,28 +24,37 @@ class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
     var interactor: MyRoutinesInteractorProtocol?
     var view: MyRoutinesViewControllerProtocol?
     
-    func giveRoutines() {
+    func giveRoutines(_ newRoutineArray: [RoutineEntity]) {
         interactor?.reciveDataFromApi()
     }
     
     func sendRoutines(_ array: [RoutineEntity]){
+        self.array = array
         view?.reciveData(array)
-        router?.reciveRoutines(array)
     }
     
     func showDetailOfRoutineSelected(_ routine: RoutineEntity) {
         router?.showDetailView(routine)
     }
     
-    func showAddRoutineViewController(_ myRoutines: [RoutineEntity]) {
-        array = myRoutines
+    func showAddRoutineViewController() {
         router?.showAddRoutineView()
     }
     
 //    func reciveNewRoutine(_ nameRoutine: RoutineEntity) {
     func reciveNewRoutine(_ nameRoutine: RoutineEntity) {
-        array.append(nameRoutine)
+        self.array.append(nameRoutine)
         view?.getNewRoutine(array)
 //        view?.getNewRoutine(nameRoutine)
     }
+    
+    func showAlertDeleteRoutine(_ index: Int) {
+        router?.showDeleteRoutineAlert(index)
+    }
+    
+    func confirmDeleteRoutine(_ index: Int) {
+        self.array.remove(at: index)
+        view?.getNewRoutine(array)
+    }
+    
 }

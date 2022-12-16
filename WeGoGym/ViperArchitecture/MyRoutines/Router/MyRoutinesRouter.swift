@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 
 protocol MyRoutineRouterProtocol {
-    func reciveRoutines(_ array: [RoutineEntity])
     func showDetailView(_ routine: RoutineEntity)
     func showAddRoutineView()
+    func showDeleteRoutineAlert(_ index: Int)
 }
 
 class MyRoutineRouter : MyRoutineRouterProtocol{
@@ -23,9 +23,6 @@ class MyRoutineRouter : MyRoutineRouterProtocol{
     required init(presenter: MyRoutinesPresenterProtocol, view: UIViewController) {
         self.presenter = presenter
         self.view = view
-    }
-    
-    func reciveRoutines(_ array: [RoutineEntity]) {
     }
     
     func showDetailView(_ routine: RoutineEntity){
@@ -48,6 +45,15 @@ class MyRoutineRouter : MyRoutineRouterProtocol{
             let nav = UINavigationController(rootViewController: createViewController)
             view?.present(nav, animated: true)
         }
+    }
+    func showDeleteRoutineAlert(_ index: Int) {
+        let alert = UIAlertController(title: "Eliminar Rutiina", message: "¿Estás seguro de eliminar esta rutina? Una vez eliminada no podra recuperarla.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: { action in
+        }))
+        alert.addAction(UIAlertAction(title: "Eliminar", style: .destructive, handler: { action in
+            self.presenter?.confirmDeleteRoutine(index)
+        }))
+        self.view?.present(alert, animated: true)
     }
 }
 

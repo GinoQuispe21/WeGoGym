@@ -19,7 +19,7 @@ class MyRoutinesViewController: UIViewController {
     
     @IBOutlet private weak var myRoutinesTableView: UITableView!
     @IBAction private func addRoutineButton(_ sender: UIButton) {
-        presenter?.showAddRoutineViewController(myRoutines)
+        presenter?.showAddRoutineViewController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,7 +28,7 @@ class MyRoutinesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.giveRoutines()
+        presenter?.giveRoutines(myRoutines)
         myRoutinesTableView.dataSource = self
         myRoutinesTableView.delegate = self
         
@@ -50,6 +50,8 @@ extension MyRoutinesViewController : UITableViewDataSource, UITableViewDelegate 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "routineCell", for: indexPath) as? RoutineTableViewCell else {return UITableViewCell()}
         let routine = myRoutines[indexPath.section]
+        cell.index = indexPath.section
+        cell.presenter = presenter
         cell.setupEntity(routine)
         return cell
     }
@@ -62,8 +64,6 @@ extension MyRoutinesViewController : UITableViewDataSource, UITableViewDelegate 
 
 extension MyRoutinesViewController: MyRoutinesViewControllerProtocol {
     func getNewRoutine(_ newRoutineArray: [RoutineEntity]) {
-//        en duda si esto se hace aqui
-//        myRoutines.apppend(obect of routineEntity)
         self.myRoutines = newRoutineArray
         myRoutinesTableView.reloadData()
     }
