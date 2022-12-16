@@ -9,8 +9,7 @@ import UIKit
 
 protocol CreateRoutineViewControllerProtocol {
     func reciveRoutines(_ arrayAllExercises: [ExerciseEntity])
-    func reciveNewExercise(_ newArrayExercisesAdded: [ExcerciseStruct], _ countExercisesArray: Int)
-    func deleteExercise(_ newArrayExerciseDeleted: [ExcerciseStruct], _ countExercisesArray: Int)
+    func updateArrayExercise(_ newArrayExercises: [ExcerciseStruct], _ countExercisesArray: Int)
 }
 
 class CreateRoutineViewController: UIViewController {
@@ -34,10 +33,13 @@ class CreateRoutineViewController: UIViewController {
     @IBOutlet weak private var allExercisesTableView: UITableView!
     @IBOutlet weak private var countExerciseLabel: UILabel!
     
+    @IBOutlet weak var searchTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nameRoutineTextField.placeholder = "Nombre de la rutina"
         descriptionRoutineTextField.placeholder = "Descripción de la rutina"
+        searchTextField.placeholder = "Musuclo, nombre de ejercicio"
         allExercisesTableView.dataSource = self
         exercisesAddedCollectionView.dataSource = self
         presenter?.getAllExercises()
@@ -85,21 +87,13 @@ extension CreateRoutineViewController : UITableViewDataSource {
 }
 
 extension CreateRoutineViewController : CreateRoutineViewControllerProtocol {
-    
-    func reciveNewExercise(_ newArrayExercisesAdded: [ExcerciseStruct],_ countExercisesArray: Int) {
-        countExerciseLabel.text = "\(countExercisesArray) ejercicios"
-        self.arrayExercises = newArrayExercisesAdded
-        self.exercisesAddedCollectionView.reloadData()
-    }
-    
-    func deleteExercise(_ newArrayExerciseDeleted: [ExcerciseStruct], _ countExercisesArray: Int) {
-        countExerciseLabel.text = "\(countExercisesArray) ejercicios"
-        self.arrayExercises = newArrayExerciseDeleted
-        self.exercisesAddedCollectionView.reloadData()
-    }
-    
     func reciveRoutines(_ arrayAllExercises: [ExerciseEntity]) {
         self.arrayTableView = arrayAllExercises
+    }
+    func updateArrayExercise(_ newArrayExercises: [ExcerciseStruct], _ countExercisesArray: Int){
+        countExerciseLabel.text = "\(countExercisesArray) ejercicios"
+        self.arrayExercises = newArrayExercises
+        self.exercisesAddedCollectionView.reloadData()
     }
 }
 
@@ -108,15 +102,14 @@ extension UICollectionView {
         let emptyView = UIView(frame: CGRect(x: self.center.x, y: self.center.y, width: self.bounds.size.width, height: self.bounds.size.height))
         let messageLabel = UILabel()
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
-        messageLabel.textColor = UIColor.lightGray
+        messageLabel.textColor = UIColor.gray
         emptyView.addSubview(messageLabel)
         messageLabel.leftAnchor.constraint(equalTo: emptyView.leftAnchor, constant: 20).isActive = true
         messageLabel.rightAnchor.constraint(equalTo: emptyView.rightAnchor, constant: -20).isActive = true
-        messageLabel.topAnchor.constraint(equalTo: emptyView.topAnchor, constant: 30).isActive = true
+        messageLabel.topAnchor.constraint(equalTo: emptyView.topAnchor, constant: 50).isActive = true
         messageLabel.text = message
         messageLabel.numberOfLines = 0
         messageLabel.textAlignment = .center
-        // The only tricky part is here:
         self.backgroundView = emptyView
     }
     func restore() {

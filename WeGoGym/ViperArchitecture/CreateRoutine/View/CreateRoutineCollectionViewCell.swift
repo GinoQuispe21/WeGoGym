@@ -18,6 +18,9 @@ class CreateRoutineCollectionViewCell: UICollectionViewCell {
     @IBAction func deleteExerciseButton(_ sender: UIButton) {
         presenter?.deleteExerciseToRoutine(indexCell)
     }
+    @IBAction func updateExerciseButton(_ sender: Any) {
+        presenter?.showAlertUpdate(indexCell)
+    }
     
     func setupLabels(_ exercise: ExcerciseStruct) {
         nameExerciseLabel.text = exercise.name

@@ -10,8 +10,8 @@ import Foundation
 public struct ExcerciseStruct: Decodable {
     let name: String
     let muscle: String
-    let series: Int
-    let reps: Int
+    var series: Int
+    var reps: Int
 }
 
 struct RoutineResponse: Decodable {

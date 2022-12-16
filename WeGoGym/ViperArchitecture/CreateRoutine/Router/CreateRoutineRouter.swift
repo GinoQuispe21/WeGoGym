@@ -14,6 +14,7 @@ protocol CreaterRoutineRouterProtocol {
     func showAlertEmptyInputs()
     func showAlertAddRoutine(nameExerciseLabel: String, muscleExerciseLabel: String)
     func showAlertDeleteExercise(_ indexCell: Int)
+    func showAlertUpdate(_ series: Int, _ reps: Int, _ indexCell: Int)
 }
 
 class CreateRoutineRouter {
@@ -82,4 +83,30 @@ extension CreateRoutineRouter: CreaterRoutineRouterProtocol {
         view?.present(alert, animated: true)
     }
     
+    func showAlertUpdate(_ series: Int, _ reps: Int, _ indexCell: Int){
+        let alert = UIAlertController(title: "Actualizar series y repeticiones", message: "Escriba las nuevas series y repeticiones que deseé actualizar en este ejercicio seleccionado.", preferredStyle: .alert)
+                alert.addTextField { field in
+                    field.placeholder = "Cantidad de series"
+                    field.text = String(series)
+                    field.returnKeyType = .next
+                    field.keyboardType = .numberPad
+                }
+                alert.addTextField { field in
+                    field.placeholder = "Cantidad de repeticiones"
+                    field.text = String(reps)
+                    field.returnKeyType = .continue
+                    field.keyboardType = .numberPad
+                }
+                alert.addAction(UIAlertAction(title: "Cancelar", style: .default, handler: nil))
+                alert.addAction(UIAlertAction(title: "Actualizar", style: .default, handler: { action in
+                    guard let inputs = alert.textFields, inputs.count == 2 else {return}
+                    let seriesField = inputs[0]
+                    let repsField = inputs[1]
+                    guard let series = seriesField.text, let reps = repsField.text, !series.isEmpty, !reps.isEmpty else {return}
+                    let seriesToUpdate = Int(series) ?? 0
+                    let repsToUpdate = Int(reps) ?? 0
+                    self.presenter?.reciveUpdatedExercise(seriesToUpdate, repsToUpdate, indexCell)
+                }))
+        view?.present(alert, animated: true, completion: nil)
+    }
 }

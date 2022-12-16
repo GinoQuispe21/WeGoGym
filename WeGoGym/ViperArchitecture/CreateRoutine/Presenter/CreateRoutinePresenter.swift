@@ -18,6 +18,8 @@ protocol CreateRoutinePresenterProtocol {
     func deleteExerciseToRoutine(_ indexCell: Int)
     func reciveConfirmationDelete(_ indexCell: Int)
     func showViewBehindCollectionView( elements: Int, exercisesAddedCollectionView: UICollectionView)
+    func showAlertUpdate(_ indexCell: Int)
+    func reciveUpdatedExercise(_ seriesToUpdate: Int,_ repsToUpdate: Int,_ indexCell: Int)
 }
 
 class CreateRoutinePresenter {
@@ -61,7 +63,7 @@ extension CreateRoutinePresenter : CreateRoutinePresenterProtocol {
     func reciveNewExerciseToRoutine(_ newExercise: ExcerciseStruct) {
 //        counExcercisesLabel.text = "\(excercisesAddedArray.count) ejercicios"
         self.auxArrayExercises.append(newExercise)
-        view?.reciveNewExercise(auxArrayExercises, auxArrayExercises.count)
+        view?.updateArrayExercise(auxArrayExercises, auxArrayExercises.count)
     }
     
     func deleteExerciseToRoutine(_ indexCell: Int) {
@@ -70,7 +72,7 @@ extension CreateRoutinePresenter : CreateRoutinePresenterProtocol {
     
     func reciveConfirmationDelete(_ indexCell: Int) {
         self.auxArrayExercises.remove(at: indexCell)
-        view?.deleteExercise(auxArrayExercises, auxArrayExercises.count)
+        view?.updateArrayExercise(auxArrayExercises, auxArrayExercises.count)
     }
     func showViewBehindCollectionView(elements: Int, exercisesAddedCollectionView: UICollectionView) {
         if elements == 0 {
@@ -78,7 +80,17 @@ extension CreateRoutinePresenter : CreateRoutinePresenterProtocol {
         } else {
             exercisesAddedCollectionView.restore()
         }
-    }    
+    }
+    
+    func showAlertUpdate(_ indexCell: Int) {
+        router?.showAlertUpdate(auxArrayExercises[indexCell].series, auxArrayExercises[indexCell].reps, indexCell)
+    }
+    
+    func reciveUpdatedExercise(_ seriesToUpdate: Int,_ repsToUpdate:Int,_ indexCell:Int) {
+        self.auxArrayExercises[indexCell].series = seriesToUpdate
+        self.auxArrayExercises[indexCell].reps = repsToUpdate
+        view?.updateArrayExercise(auxArrayExercises, auxArrayExercises.count)
+    }
 }
 
 
