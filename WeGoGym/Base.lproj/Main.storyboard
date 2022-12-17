@@ -8,128 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="yIt-Yr-jgP">
-            <objects>
-                <viewController id="zrD-gw-PTI" customClass="ViewController" customModule="WeGoGym" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="q8q-CX-VwZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="rgw-8S-3vD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xgZ-XP-9XE">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundFirstScreen" translatesAutoresizingMaskIntoConstraints="NO" id="0wk-lW-ylo">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sp-li-YGq">
-                                <rect key="frame" x="64.666666666666686" y="535" width="264" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="epK-5x-kNQ"/>
-                                    <constraint firstAttribute="width" constant="264" id="wyp-xs-SOq"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" buttonSize="large" titleAlignment="center">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Comenzar">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="21" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.93435472249999996" green="0.49033868310000001" blue="0.188110739" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="signUp:" destination="zrD-gw-PTI" eventType="touchUpInside" id="G07-Hz-mzq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZp-bo-SSC">
-                                <rect key="frame" x="64.666666666666686" y="625" width="264" height="55"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="264" id="1PR-MS-nKZ"/>
-                                    <constraint firstAttribute="height" constant="55" id="zM4-aP-SSU"/>
-                                </constraints>
-                                <buttonConfiguration key="configuration" style="gray" buttonSize="large" titleAlignment="center">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Ya tengo una cuenta">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="21" name="Helvetica-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" red="0.24160080726700595" green="0.24160080726700595" blue="0.24160080726700595" alpha="0.77541528158629969" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="signIn:" destination="zrD-gw-PTI" eventType="touchUpInside" id="lSb-q4-Jnp"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDO-3r-XzP">
-                                <rect key="frame" x="53" y="740" width="287" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="287" id="17g-r1-fak"/>
-                                    <constraint firstAttribute="height" constant="48" id="Shh-YV-5sF"/>
-                                </constraints>
-                                <string key="text">Para buscar tu gimnasio ideal 
-inicia sesión o registrate</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labelWeGoGym" translatesAutoresizingMaskIntoConstraints="NO" id="dHS-AI-Zzz">
-                                <rect key="frame" x="76.666666666666686" y="60" width="240" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="6OC-ho-Atg"/>
-                                    <constraint firstAttribute="width" constant="240" id="CwP-QZ-5RT"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="0wk-lW-ylo" secondAttribute="trailing" id="0Ih-lf-HEZ"/>
-                            <constraint firstItem="CZp-bo-SSC" firstAttribute="centerX" secondItem="xgZ-XP-9XE" secondAttribute="centerX" id="4PA-lG-Iws"/>
-                            <constraint firstItem="CZp-bo-SSC" firstAttribute="top" secondItem="8sp-li-YGq" secondAttribute="bottom" constant="39" id="5vg-7k-6em"/>
-                            <constraint firstItem="CZp-bo-SSC" firstAttribute="centerX" secondItem="8sp-li-YGq" secondAttribute="centerX" id="CxX-FG-koN"/>
-                            <constraint firstItem="cDO-3r-XzP" firstAttribute="top" secondItem="CZp-bo-SSC" secondAttribute="bottom" constant="60" id="FJW-sO-xTi"/>
-                            <constraint firstItem="8sp-li-YGq" firstAttribute="centerX" secondItem="xgZ-XP-9XE" secondAttribute="centerX" id="Fo9-3y-iSA"/>
-                            <constraint firstAttribute="bottom" secondItem="0wk-lW-ylo" secondAttribute="bottom" id="KbN-jd-N3Y"/>
-                            <constraint firstItem="dHS-AI-Zzz" firstAttribute="centerX" secondItem="xgZ-XP-9XE" secondAttribute="centerX" id="QJ2-vs-LNi"/>
-                            <constraint firstItem="cDO-3r-XzP" firstAttribute="centerX" secondItem="xgZ-XP-9XE" secondAttribute="centerX" id="Skj-xe-bLw"/>
-                            <constraint firstItem="0wk-lW-ylo" firstAttribute="leading" secondItem="xgZ-XP-9XE" secondAttribute="leading" id="bgH-K9-iga"/>
-                            <constraint firstItem="rgw-8S-3vD" firstAttribute="top" secondItem="cDO-3r-XzP" secondAttribute="bottom" constant="30" id="jA8-F8-Hhr"/>
-                            <constraint firstItem="dHS-AI-Zzz" firstAttribute="top" secondItem="xgZ-XP-9XE" secondAttribute="top" constant="60" id="lB0-r5-4nh"/>
-                            <constraint firstItem="0wk-lW-ylo" firstAttribute="top" secondItem="xgZ-XP-9XE" secondAttribute="top" id="mah-kJ-hJf"/>
-                            <constraint firstItem="cDO-3r-XzP" firstAttribute="top" secondItem="CZp-bo-SSC" secondAttribute="bottom" constant="60" id="oTm-xk-oj0"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Wvo-6X-bII"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x4F-Uh-wiA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1843.5114503816794" y="-324.64788732394368"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="moJ-eP-J1Y">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XXi-4d-Txu" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rjn-t0-cQP">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="zrD-gw-PTI" kind="relationship" relationship="rootViewController" id="671-hl-Ieq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Abj-w2-do6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="916.79389312977094" y="-324.64788732394368"/>
-        </scene>
         <!--Mis Rutinas-->
         <scene sceneID="lMI-S7-mJI">
             <objects>
@@ -159,7 +37,7 @@ inicia sesión o registrate</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="cvf-YO-Pwa">
-                                <rect key="frame" x="21" y="188" width="352" height="56"/>
+                                <rect key="frame" x="21" y="188.33333333333334" width="352" height="56"/>
                                 <color key="barTintColor" systemColor="systemGray6Color"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
