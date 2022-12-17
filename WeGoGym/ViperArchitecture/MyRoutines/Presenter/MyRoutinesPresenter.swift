@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol MyRoutinesPresenterProtocol : AnyObject {
+protocol MyRoutinesPresenterProtocol {
     func giveRoutines(_ newRoutineArray: [RoutineEntity])
     func sendRoutines(_ array: [RoutineEntity])
     func showDetailOfRoutineSelected(_ routine: RoutineEntity)
@@ -17,12 +17,14 @@ protocol MyRoutinesPresenterProtocol : AnyObject {
     func showAlertDeleteRoutine(_ index: Int)
     func confirmDeleteRoutine(_ index: Int)
     func showViewBehindTableView(_ elements: Int,_ myRoutinesTableView: UITableView)
-    func searchTextRoutineTableView(_ text: String,_ arrayRoutines: [RoutineEntity],_ myRoutinesTableView: UITableView)
+    func searchTextRoutineTableView(_ text: String,_ arrayRoutines: [RoutineEntity])
 }
 
 class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
     
     private var array: [RoutineEntity] = []
+//    private var backup: [RoutineEntity] = []
+    
     var router: MyRoutineRouterProtocol?
     var interactor: MyRoutinesInteractorProtocol?
     var view: MyRoutinesViewControllerProtocol?
@@ -67,7 +69,7 @@ class MyRoutinesPresenter : MyRoutinesPresenterProtocol{
             myRoutinesTableView.restore()
         }
     }
-    func searchTextRoutineTableView(_ text: String,_ arrayRoutines: [RoutineEntity],_ myRoutinesTableView: UITableView) {
+    func searchTextRoutineTableView(_ text: String,_ arrayRoutines: [RoutineEntity]) {
         var aux : [RoutineEntity] = []
         if text == "" { aux = arrayRoutines }
         for word in arrayRoutines {

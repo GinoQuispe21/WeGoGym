@@ -63,7 +63,7 @@ extension MyRoutinesViewController : UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let routine = myRoutines[indexPath.section]
+        let routine = backup[indexPath.section]
         presenter?.showDetailOfRoutineSelected(routine)
     }
 }
@@ -87,7 +87,7 @@ extension MyRoutinesViewController: MyRoutinesViewControllerProtocol {
 
 extension MyRoutinesViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        presenter?.searchTextRoutineTableView(searchText, myRoutines, myRoutinesTableView)
+        presenter?.searchTextRoutineTableView(searchText, myRoutines)
     }
 }
 

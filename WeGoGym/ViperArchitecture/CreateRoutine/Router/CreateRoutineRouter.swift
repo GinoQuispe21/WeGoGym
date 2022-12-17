@@ -34,6 +34,7 @@ extension CreateRoutineRouter: CreaterRoutineRouterProtocol {
     func showCreateRoutineAlert(name: String, description: String, time: Int, countExercises: Int, excercises: [ExcerciseStruct]) {
         view?.dismiss(animated: true)
         let newRoutine = RoutineEntity(name: name, description: description, author: "mi", time: time, exercises: excercises)
+//        paso 3: llamada al metodo
         delegate.createRoutineConfiguratorDelegate(didCreate: newRoutine)
     }
     

@@ -18,6 +18,7 @@ class MyRoutinesConfigurator {
         guard let viewController = aux.instantiateViewController(withIdentifier: "myRoutinesViewController") as? MyRoutinesViewController else {
             return UIViewController()
         }
+        
         let interactor = MyRoutinesInteractor(presenter: presenter, api: api)
         let router = MyRoutineRouter(presenter: presenter, view: viewController)
         viewController.presenter = presenter

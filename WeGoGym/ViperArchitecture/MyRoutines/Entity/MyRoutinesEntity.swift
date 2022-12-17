@@ -7,6 +7,18 @@
 
 import Foundation
 
+//struct ExerciseOfRoutineEntity {
+//    let name: String
+//    let muscle: String
+//    var series: Int
+//    var reps: Int
+////
+////    static func make(_ exercises: [ExcerciseStruct]) -> [ExerciseOfRoutineEntity] {
+////        return exercises.map( { ExerciseOfRoutineEntity(name: $0.name, muscle: $0.muscle, series: $0.series, reps: $0.reps) })
+////    }
+////
+//}
+
 struct RoutineEntity {
     let name: String
     let description: String

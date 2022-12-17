@@ -17,7 +17,7 @@ protocol MyRoutineRouterProtocol {
 class MyRoutineRouter : MyRoutineRouterProtocol{
     
     var createRoutineConfigurator: CreateRoutineConfigurator?
-    let presenter: MyRoutinesPresenterProtocol?
+    var presenter: MyRoutinesPresenterProtocol?
     var view: UIViewController?
     
     required init(presenter: MyRoutinesPresenterProtocol, view: UIViewController) {
@@ -50,6 +50,7 @@ class MyRoutineRouter : MyRoutineRouterProtocol{
     }
 }
 
+// desde el cliente
 // 1. adopoto el protocolo
 
 extension MyRoutineRouter: CreateRoutineConfiguratorDelegate {

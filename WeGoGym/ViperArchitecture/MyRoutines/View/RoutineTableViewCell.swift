@@ -9,7 +9,7 @@ import UIKit
 
 class RoutineTableViewCell: UITableViewCell {
 
-    weak var presenter : MyRoutinesPresenterProtocol?
+    var presenter : MyRoutinesPresenterProtocol?
     var index: Int = 0
     
     @IBOutlet var nameLabel: UILabel!
@@ -18,7 +18,6 @@ class RoutineTableViewCell: UITableViewCell {
     @IBOutlet var timeRoutineLabel: UILabel!
     @IBOutlet var routineImageView: UIImageView!
     @IBAction func deleteButton(_ sender: UIButton) {
-        print(index)
         presenter?.showAlertDeleteRoutine(index)
     }
     

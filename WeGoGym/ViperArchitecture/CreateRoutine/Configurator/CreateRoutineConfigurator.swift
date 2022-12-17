@@ -8,13 +8,14 @@
 import Foundation
 import UIKit
 
+// Paso 1 (proveedor) -> creamos la interface
 protocol CreateRoutineConfiguratorDelegate {
     func createRoutineConfiguratorDelegate(didCreate nameRoutine: RoutineEntity)
 }
 
 class CreateRoutineConfigurator {
-    
-    public var delegate: CreateRoutineConfiguratorDelegate?
+// Pas 2 -> creamos la propiedad
+    var delegate: CreateRoutineConfiguratorDelegate?
     
     func make() -> UIViewController {
         
@@ -26,7 +27,7 @@ class CreateRoutineConfigurator {
         }
         let interactor = CreateRoutineInteractor(api: api, presenter: presenter)
 //        no se puede acceder al delegate por el constructor xq estoy en un metodo de clase
-        let router = CreateRoutineRouter(view: viewController, presenter: presenter ,delegate: delegate!)
+        let router = CreateRoutineRouter(view: viewController, presenter: presenter , delegate: delegate!)
         viewController.presenter = presenter
         presenter.view = viewController
         presenter.interactor = interactor
