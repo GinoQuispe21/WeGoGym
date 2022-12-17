@@ -15,9 +15,6 @@
 		7E0419522948A65D0033292E /* routines_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0419512948A65D0033292E /* routines_success.json */; };
 		7E0419542948A71F0033292E /* RoutineResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0419532948A71F0033292E /* RoutineResponse.swift */; };
 		7E0419562948A8F00033292E /* NetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0419552948A8F00033292E /* NetWorking.swift */; };
-		7E1F6E6E2936D33F00D0A224 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E6D2936D33F00D0A224 /* ProfileViewController.swift */; };
-		7E1F6E702936D6C700D0A224 /* ProfileOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E6F2936D6C700D0A224 /* ProfileOptions.swift */; };
-		7E1F6E722936D89100D0A224 /* ProfileOptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */; };
 		7E22A2E9294A2F4E004037B2 /* CreateRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22A2E8294A2F4E004037B2 /* CreateRoutineViewController.swift */; };
 		7E22A2F0294A3300004037B2 /* CreateRoutineConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22A2EF294A3300004037B2 /* CreateRoutineConfigurator.swift */; };
 		7E22A2F2294A3316004037B2 /* CreateRoutinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E22A2F1294A3316004037B2 /* CreateRoutinePresenter.swift */; };
@@ -33,31 +30,16 @@
 		7E247BA129493C6400B4E094 /* RoutineDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E247BA029493C6400B4E094 /* RoutineDetailPresenter.swift */; };
 		7E247BA52949523A00B4E094 /* RoutineDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E247BA42949523A00B4E094 /* RoutineDetailProtocols.swift */; };
 		7E247BA8294952CC00B4E094 /* RoutineDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E247BA7294952CC00B4E094 /* RoutineDetailEntity.swift */; };
+		7E2715EB294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2715EA294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift */; };
 		7E29F04C29478EAD0037D2BF /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E29F04B29478EAD0037D2BF /* TemplateViewController.swift */; };
-		7E41A064293E69B000B60316 /* UpdateRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41A063293E69B000B60316 /* UpdateRoutineViewController.swift */; };
 		7E489A73293D4E2F00E1B189 /* RoutineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */; };
 		7E489A74293D4E2F00E1B189 /* RoutineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */; };
-		7E489A76293D67DC00E1B189 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A75293D67DC00E1B189 /* Routine.swift */; };
-		7E489A78293D684C00E1B189 /* Excercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A77293D684C00E1B189 /* Excercise.swift */; };
-		7E489A7A293D7EBB00E1B189 /* DetailRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */; };
-		7E489A7C293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */; };
-		7E489A7E293DA2CB00E1B189 /* AddRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */; };
-		7EB687DB293D0242001BE573 /* SignInSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB687DA293D0242001BE573 /* SignInSB.storyboard */; };
-		7EB687DD293D09A5001BE573 /* SignUpSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB687DC293D09A5001BE573 /* SignUpSB.storyboard */; };
-		7EB687DF293D0EF5001BE573 /* HomeSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB687DE293D0EF5001BE573 /* HomeSB.storyboard */; };
-		7EB687E1293D13CE001BE573 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB687E0293D13CE001BE573 /* HomeViewController.swift */; };
-		7EB687E6293D3E86001BE573 /* RoutinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB687E5293D3E86001BE573 /* RoutinesViewController.swift */; };
-		7EB71B8D294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB71B8C294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift */; };
-		7EB71B8F294152AB002D7E7C /* ExecerciseListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB71B8E294152AB002D7E7C /* ExecerciseListTableViewCell.swift */; };
 		7EE2AD502948951000ED8708 /* MyRoutinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE2AD4F2948951000ED8708 /* MyRoutinesViewController.swift */; };
 		7EE2AD522948952200ED8708 /* MyRoutinesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE2AD512948952200ED8708 /* MyRoutinesConfigurator.swift */; };
 		7EE2AD542948953200ED8708 /* MyRoutinesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE2AD532948953200ED8708 /* MyRoutinesPresenter.swift */; };
 		7EE2AD562948953E00ED8708 /* MyRoutinesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE2AD552948953E00ED8708 /* MyRoutinesInteractor.swift */; };
 		7EE2AD582948955B00ED8708 /* MyRoutinesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE2AD572948955B00ED8708 /* MyRoutinesRouter.swift */; };
 		7EE2AD5A2948957000ED8708 /* MyRoutinesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE2AD592948957000ED8708 /* MyRoutinesEntity.swift */; };
-		7EE4769E29369B0400C3DC07 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */; };
-		7EE476A229369F3F00C3DC07 /* ObjectivesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */; };
-		7EF90269294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF90268294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,9 +53,6 @@
 		7E0419512948A65D0033292E /* routines_success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = routines_success.json; sourceTree = "<group>"; };
 		7E0419532948A71F0033292E /* RoutineResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineResponse.swift; sourceTree = "<group>"; };
 		7E0419552948A8F00033292E /* NetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorking.swift; sourceTree = "<group>"; };
-		7E1F6E6D2936D33F00D0A224 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		7E1F6E6F2936D6C700D0A224 /* ProfileOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptions.swift; sourceTree = "<group>"; };
-		7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionTableViewCell.swift; sourceTree = "<group>"; };
 		7E22A2E8294A2F4E004037B2 /* CreateRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineViewController.swift; sourceTree = "<group>"; };
 		7E22A2EF294A3300004037B2 /* CreateRoutineConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutineConfigurator.swift; sourceTree = "<group>"; };
 		7E22A2F1294A3316004037B2 /* CreateRoutinePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoutinePresenter.swift; sourceTree = "<group>"; };
@@ -89,31 +68,16 @@
 		7E247BA029493C6400B4E094 /* RoutineDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailPresenter.swift; sourceTree = "<group>"; };
 		7E247BA42949523A00B4E094 /* RoutineDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailProtocols.swift; sourceTree = "<group>"; };
 		7E247BA7294952CC00B4E094 /* RoutineDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailEntity.swift; sourceTree = "<group>"; };
+		7E2715EA294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExcerciseRoutineDetailCollectionViewCell.swift; path = ../../../../Documents/OldArchitecture/HomeView/RoutinesView/ExcerciseRoutineDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		7E29F04B29478EAD0037D2BF /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
-		7E41A063293E69B000B60316 /* UpdateRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateRoutineViewController.swift; sourceTree = "<group>"; };
 		7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTableViewCell.swift; sourceTree = "<group>"; };
 		7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineTableViewCell.xib; sourceTree = "<group>"; };
-		7E489A75293D67DC00E1B189 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
-		7E489A77293D684C00E1B189 /* Excercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excercise.swift; sourceTree = "<group>"; };
-		7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRoutineViewController.swift; sourceTree = "<group>"; };
-		7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RoutinesFeaturesSB.storyboard; sourceTree = "<group>"; };
-		7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRoutineViewController.swift; sourceTree = "<group>"; };
-		7EB687DA293D0242001BE573 /* SignInSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInSB.storyboard; sourceTree = "<group>"; };
-		7EB687DC293D09A5001BE573 /* SignUpSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpSB.storyboard; sourceTree = "<group>"; };
-		7EB687DE293D0EF5001BE573 /* HomeSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeSB.storyboard; sourceTree = "<group>"; };
-		7EB687E0293D13CE001BE573 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		7EB687E5293D3E86001BE573 /* RoutinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesViewController.swift; sourceTree = "<group>"; };
-		7EB71B8C294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseAddedCollectionViewCell.swift; sourceTree = "<group>"; };
-		7EB71B8E294152AB002D7E7C /* ExecerciseListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecerciseListTableViewCell.swift; sourceTree = "<group>"; };
 		7EE2AD4F2948951000ED8708 /* MyRoutinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutinesViewController.swift; sourceTree = "<group>"; };
 		7EE2AD512948952200ED8708 /* MyRoutinesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutinesConfigurator.swift; sourceTree = "<group>"; };
 		7EE2AD532948953200ED8708 /* MyRoutinesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutinesPresenter.swift; sourceTree = "<group>"; };
 		7EE2AD552948953E00ED8708 /* MyRoutinesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutinesInteractor.swift; sourceTree = "<group>"; };
 		7EE2AD572948955B00ED8708 /* MyRoutinesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutinesRouter.swift; sourceTree = "<group>"; };
 		7EE2AD592948957000ED8708 /* MyRoutinesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutinesEntity.swift; sourceTree = "<group>"; };
-		7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivesViewController.swift; sourceTree = "<group>"; };
-		7EF90268294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcerciseRoutineDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				7E0C60A82946D1F600A7A529 /* ViperArchitecture */,
-				7E0C60A72946D10A00A7A529 /* OldArchitecture */,
 				7E0042F1293159BF006157AD /* Main.storyboard */,
 				7E0042F4293159C1006157AD /* Assets.xcassets */,
 				7E0042F6293159C1006157AD /* LaunchScreen.storyboard */,
@@ -173,17 +136,6 @@
 				7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		7E0C60A72946D10A00A7A529 /* OldArchitecture */ = {
-			isa = PBXGroup;
-			children = (
-				7EB687D7293D0019001BE573 /* SignInView */,
-				7EB687D8293D0034001BE573 /* SignUpView */,
-				7EB687D9293D004A001BE573 /* HomeView */,
-				7EB687E4293D1BF0001BE573 /* Models */,
-			);
-			path = OldArchitecture;
 			sourceTree = "<group>";
 		};
 		7E0C60A82946D1F600A7A529 /* ViperArchitecture */ = {
@@ -326,6 +278,7 @@
 				7E247B9E29493C5400B4E094 /* RoutineDetailConfigurator.swift */,
 				7E247BA029493C6400B4E094 /* RoutineDetailPresenter.swift */,
 				7E247BA42949523A00B4E094 /* RoutineDetailProtocols.swift */,
+				7E2715EA294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift */,
 			);
 			path = RoutineDetail;
 			sourceTree = "<group>";
@@ -337,77 +290,6 @@
 				7E247BA7294952CC00B4E094 /* RoutineDetailEntity.swift */,
 			);
 			path = Entity;
-			sourceTree = "<group>";
-		};
-		7EB687D7293D0019001BE573 /* SignInView */ = {
-			isa = PBXGroup;
-			children = (
-				7EB687DA293D0242001BE573 /* SignInSB.storyboard */,
-			);
-			path = SignInView;
-			sourceTree = "<group>";
-		};
-		7EB687D8293D0034001BE573 /* SignUpView */ = {
-			isa = PBXGroup;
-			children = (
-				7EE4769D29369B0400C3DC07 /* SignUpViewController.swift */,
-				7EE476A129369F3F00C3DC07 /* ObjectivesViewController.swift */,
-				7EB687DC293D09A5001BE573 /* SignUpSB.storyboard */,
-			);
-			path = SignUpView;
-			sourceTree = "<group>";
-		};
-		7EB687D9293D004A001BE573 /* HomeView */ = {
-			isa = PBXGroup;
-			children = (
-				7EB687E3293D1BDF001BE573 /* ProfileView */,
-				7EB687E2293D1BC6001BE573 /* RoutinesView */,
-				7E1F6E6D2936D33F00D0A224 /* ProfileViewController.swift */,
-				7E1F6E712936D89100D0A224 /* ProfileOptionTableViewCell.swift */,
-				7E1F6E6F2936D6C700D0A224 /* ProfileOptions.swift */,
-				7EB687DE293D0EF5001BE573 /* HomeSB.storyboard */,
-				7EB687E0293D13CE001BE573 /* HomeViewController.swift */,
-			);
-			path = HomeView;
-			sourceTree = "<group>";
-		};
-		7EB687E2293D1BC6001BE573 /* RoutinesView */ = {
-			isa = PBXGroup;
-			children = (
-				7EB71B8B2941439A002D7E7C /* AddRoutineView */,
-				7EB687E5293D3E86001BE573 /* RoutinesViewController.swift */,
-				7E489A79293D7EBB00E1B189 /* DetailRoutineViewController.swift */,
-				7E489A7B293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard */,
-				7E41A063293E69B000B60316 /* UpdateRoutineViewController.swift */,
-				7EF90268294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift */,
-			);
-			path = RoutinesView;
-			sourceTree = "<group>";
-		};
-		7EB687E3293D1BDF001BE573 /* ProfileView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ProfileView;
-			sourceTree = "<group>";
-		};
-		7EB687E4293D1BF0001BE573 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7E489A75293D67DC00E1B189 /* Routine.swift */,
-				7E489A77293D684C00E1B189 /* Excercise.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		7EB71B8B2941439A002D7E7C /* AddRoutineView */ = {
-			isa = PBXGroup;
-			children = (
-				7E489A7D293DA2CB00E1B189 /* AddRoutineViewController.swift */,
-				7EB71B8C294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift */,
-				7EB71B8E294152AB002D7E7C /* ExecerciseListTableViewCell.swift */,
-			);
-			path = AddRoutineView;
 			sourceTree = "<group>";
 		};
 		7EE2AD5B29489E9600ED8708 /* Extras */ = {
@@ -477,14 +359,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E0419522948A65D0033292E /* routines_success.json in Resources */,
-				7EB687DF293D0EF5001BE573 /* HomeSB.storyboard in Resources */,
-				7E489A7C293D8F5200E1B189 /* RoutinesFeaturesSB.storyboard in Resources */,
 				7E0042F8293159C1006157AD /* LaunchScreen.storyboard in Resources */,
 				7E0042F5293159C1006157AD /* Assets.xcassets in Resources */,
 				7E0042F3293159BF006157AD /* Main.storyboard in Resources */,
 				7E489A74293D4E2F00E1B189 /* RoutineTableViewCell.xib in Resources */,
-				7EB687DB293D0242001BE573 /* SignInSB.storyboard in Resources */,
-				7EB687DD293D09A5001BE573 /* SignUpSB.storyboard in Resources */,
 				7E22A305294A81CD004037B2 /* all_exercises_success.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,11 +376,8 @@
 			files = (
 				7E22A2F8294A3C36004037B2 /* CreateRoutineCollectionViewCell.swift in Sources */,
 				7E22A303294A4DF9004037B2 /* CreateRoutineExerciseTableViewCell.swift in Sources */,
-				7E489A76293D67DC00E1B189 /* Routine.swift in Sources */,
 				7E22A2E9294A2F4E004037B2 /* CreateRoutineViewController.swift in Sources */,
 				7EE2AD542948953200ED8708 /* MyRoutinesPresenter.swift in Sources */,
-				7E489A78293D684C00E1B189 /* Excercise.swift in Sources */,
-				7EF90269294015B8001E43D1 /* ExcerciseRoutineDetailCollectionViewCell.swift in Sources */,
 				7E0042EC293159BF006157AD /* AppDelegate.swift in Sources */,
 				7EE2AD582948955B00ED8708 /* MyRoutinesRouter.swift in Sources */,
 				7E247BA129493C6400B4E094 /* RoutineDetailPresenter.swift in Sources */,
@@ -510,26 +385,15 @@
 				7E22A2F6294A3341004037B2 /* CreateRoutineRouter.swift in Sources */,
 				7E0419562948A8F00033292E /* NetWorking.swift in Sources */,
 				7EE2AD562948953E00ED8708 /* MyRoutinesInteractor.swift in Sources */,
-				7EB687E6293D3E86001BE573 /* RoutinesViewController.swift in Sources */,
 				7E0042EE293159BF006157AD /* SceneDelegate.swift in Sources */,
 				7EE2AD522948952200ED8708 /* MyRoutinesConfigurator.swift in Sources */,
-				7E489A7E293DA2CB00E1B189 /* AddRoutineViewController.swift in Sources */,
-				7E1F6E702936D6C700D0A224 /* ProfileOptions.swift in Sources */,
-				7EB687E1293D13CE001BE573 /* HomeViewController.swift in Sources */,
-				7E1F6E6E2936D33F00D0A224 /* ProfileViewController.swift in Sources */,
+				7E2715EB294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift in Sources */,
 				7E22A2FF294A4524004037B2 /* ExerciseResponse.swift in Sources */,
-				7EE476A229369F3F00C3DC07 /* ObjectivesViewController.swift in Sources */,
-				7EB71B8F294152AB002D7E7C /* ExecerciseListTableViewCell.swift in Sources */,
 				7E22A2F2294A3316004037B2 /* CreateRoutinePresenter.swift in Sources */,
 				7E22A301294A4A8F004037B2 /* ExerciseEntity.swift in Sources */,
-				7EB71B8D294143E7002D7E7C /* ExcerciseAddedCollectionViewCell.swift in Sources */,
 				7EE2AD502948951000ED8708 /* MyRoutinesViewController.swift in Sources */,
 				7E247BA8294952CC00B4E094 /* RoutineDetailEntity.swift in Sources */,
-				7E1F6E722936D89100D0A224 /* ProfileOptionTableViewCell.swift in Sources */,
 				7E489A73293D4E2F00E1B189 /* RoutineTableViewCell.swift in Sources */,
-				7E489A7A293D7EBB00E1B189 /* DetailRoutineViewController.swift in Sources */,
-				7E41A064293E69B000B60316 /* UpdateRoutineViewController.swift in Sources */,
-				7EE4769E29369B0400C3DC07 /* SignUpViewController.swift in Sources */,
 				7E247B9D29493C2900B4E094 /* RoutineDetailViewController.swift in Sources */,
 				7E0419542948A71F0033292E /* RoutineResponse.swift in Sources */,
 				7E247B9F29493C5400B4E094 /* RoutineDetailConfigurator.swift in Sources */,
