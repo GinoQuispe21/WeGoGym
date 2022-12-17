@@ -8,11 +8,11 @@
 import Foundation
 import UIKit
 
-public protocol CreateRoutineConfiguratorDelegate {
+protocol CreateRoutineConfiguratorDelegate {
     func createRoutineConfiguratorDelegate(didCreate nameRoutine: RoutineEntity)
 }
 
-public class CreateRoutineConfigurator {
+class CreateRoutineConfigurator {
     
     public var delegate: CreateRoutineConfiguratorDelegate?
     

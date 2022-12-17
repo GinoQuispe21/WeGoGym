@@ -28,13 +28,6 @@ class MyRoutineRouter : MyRoutineRouterProtocol{
     func showDetailView(_ routine: RoutineEntity){
         let detail = RoutineDetail(name: routine.name, author: routine.author,description: routine.description, countExcercises: routine.exercises.count, time: routine.time, excercies: routine.exercises)
         let detailRoutineViewController = DetailConfigurator.make(detail)
-        
-//        let nav = UINavigationController(rootViewController: detailRoutineViewController)
-//        let destination = nav.viewControllers.first as? DetailRoutineViewController
-        
-//        view?.present(nav, animated: true)
-        
-//        view?.present(detailRoutineViewController, animated: true)
         view?.navigationController?.pushViewController(detailRoutineViewController, animated: true)
     }
     func showAddRoutineView() {

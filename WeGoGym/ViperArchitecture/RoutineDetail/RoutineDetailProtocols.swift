@@ -7,9 +7,7 @@
 
 import Foundation
 
-// public asumiendo que estamos en diferentes modulos
-
-public protocol ItemRoutineDetailProtocol {
+protocol ItemRoutineDetailProtocol {
     var name: String { get }
     var author: String { get }
     var description: String { get }

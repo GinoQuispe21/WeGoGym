@@ -33,7 +33,7 @@ class RoutineDetailViewController: UIViewController {
         titleRoutineLabel.text = presenter?.getName()
         authorRoutineLabel.text = "Creado por: \(presenter?.getAuthor() ?? "")"
         descriptionRoutineLabel.text = presenter?.getDescription()
-        countExcercisesLabel.text = "\((presenter?.getCountExcercises()) ?? 00) ejercicios"
+        countExcercisesLabel.text = "\((presenter?.getCountExcercises()) ?? 0) ejercicios"
         timeRoutineLabel.text = "\(presenter?.getTime() ?? 0) minutos"
         self.arrayExcercises = presenter?.getExcercises() ?? []
     }
