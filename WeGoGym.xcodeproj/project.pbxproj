@@ -30,10 +30,10 @@
 		7E247BA129493C6400B4E094 /* RoutineDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E247BA029493C6400B4E094 /* RoutineDetailPresenter.swift */; };
 		7E247BA52949523A00B4E094 /* RoutineDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E247BA42949523A00B4E094 /* RoutineDetailProtocols.swift */; };
 		7E247BA8294952CC00B4E094 /* RoutineDetailEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E247BA7294952CC00B4E094 /* RoutineDetailEntity.swift */; };
-		7E2715EB294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2715EA294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift */; };
 		7E29F04C29478EAD0037D2BF /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E29F04B29478EAD0037D2BF /* TemplateViewController.swift */; };
 		7E489A73293D4E2F00E1B189 /* RoutineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */; };
 		7E489A74293D4E2F00E1B189 /* RoutineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */; };
+		7E5A1FCA294DF0F900F4090D /* ExerciseRoutineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5A1FC9294DF0F900F4090D /* ExerciseRoutineCollectionViewCell.swift */; };
 		7EE2AD502948951000ED8708 /* MyRoutinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE2AD4F2948951000ED8708 /* MyRoutinesViewController.swift */; };
 		7EE2AD522948952200ED8708 /* MyRoutinesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE2AD512948952200ED8708 /* MyRoutinesConfigurator.swift */; };
 		7EE2AD542948953200ED8708 /* MyRoutinesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE2AD532948953200ED8708 /* MyRoutinesPresenter.swift */; };
@@ -68,10 +68,10 @@
 		7E247BA029493C6400B4E094 /* RoutineDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailPresenter.swift; sourceTree = "<group>"; };
 		7E247BA42949523A00B4E094 /* RoutineDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailProtocols.swift; sourceTree = "<group>"; };
 		7E247BA7294952CC00B4E094 /* RoutineDetailEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailEntity.swift; sourceTree = "<group>"; };
-		7E2715EA294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExcerciseRoutineDetailCollectionViewCell.swift; path = ../../../../Documents/OldArchitecture/HomeView/RoutinesView/ExcerciseRoutineDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		7E29F04B29478EAD0037D2BF /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		7E489A71293D4E2F00E1B189 /* RoutineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTableViewCell.swift; sourceTree = "<group>"; };
 		7E489A72293D4E2F00E1B189 /* RoutineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoutineTableViewCell.xib; sourceTree = "<group>"; };
+		7E5A1FC9294DF0F900F4090D /* ExerciseRoutineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRoutineCollectionViewCell.swift; sourceTree = "<group>"; };
 		7EE2AD4F2948951000ED8708 /* MyRoutinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutinesViewController.swift; sourceTree = "<group>"; };
 		7EE2AD512948952200ED8708 /* MyRoutinesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutinesConfigurator.swift; sourceTree = "<group>"; };
 		7EE2AD532948953200ED8708 /* MyRoutinesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoutinesPresenter.swift; sourceTree = "<group>"; };
@@ -278,7 +278,7 @@
 				7E247B9E29493C5400B4E094 /* RoutineDetailConfigurator.swift */,
 				7E247BA029493C6400B4E094 /* RoutineDetailPresenter.swift */,
 				7E247BA42949523A00B4E094 /* RoutineDetailProtocols.swift */,
-				7E2715EA294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift */,
+				7E5A1FC9294DF0F900F4090D /* ExerciseRoutineCollectionViewCell.swift */,
 			);
 			path = RoutineDetail;
 			sourceTree = "<group>";
@@ -387,7 +387,6 @@
 				7EE2AD562948953E00ED8708 /* MyRoutinesInteractor.swift in Sources */,
 				7E0042EE293159BF006157AD /* SceneDelegate.swift in Sources */,
 				7EE2AD522948952200ED8708 /* MyRoutinesConfigurator.swift in Sources */,
-				7E2715EB294DEE4700C82A18 /* ExcerciseRoutineDetailCollectionViewCell.swift in Sources */,
 				7E22A2FF294A4524004037B2 /* ExerciseResponse.swift in Sources */,
 				7E22A2F2294A3316004037B2 /* CreateRoutinePresenter.swift in Sources */,
 				7E22A301294A4A8F004037B2 /* ExerciseEntity.swift in Sources */,
@@ -401,6 +400,7 @@
 				7E22A2F4294A332F004037B2 /* CreateRoutineInteractor.swift in Sources */,
 				7EE2AD5A2948957000ED8708 /* MyRoutinesEntity.swift in Sources */,
 				7E22A2F0294A3300004037B2 /* CreateRoutineConfigurator.swift in Sources */,
+				7E5A1FCA294DF0F900F4090D /* ExerciseRoutineCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,6 +19,27 @@
              "series": 4,
              "reps": 12
          },
+         {
+             "name": "Ejercicio bien bontio",
+             "descripcion": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+             "muscle": "Pechito",
+             "series": 4,
+             "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "descripcion": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+             "muscle": "Pechito",
+             "series": 6,
+             "reps": 5
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "descripcion": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+             "muscle": "Pechito",
+             "series": 5,
+             "reps": 10
+         }
      ]
  },
  {
@@ -51,38 +72,9 @@
      ]
  },
  {
-     "name": "Rutina de Piernas",
-     "author": "Carlos Mazzarri",
-     "descripcion": "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
-     "time": 20,
-     "exercises": [
-         {
-             "name": "Ejercicio bien bontio",
-             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
-             "muscle": "Pechito",
-             "series": 4,
-             "reps": 12
-         },
-         {
-             "name": "Ejercicio bien bontio",
-             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
-             "muscle": "Pechito",
-             "series": 4,
-             "reps": 12
-         },
-         {
-             "name": "Ejercicio bien bontio",
-             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
-             "muscle": "Pechito",
-             "series": 4,
-             "reps": 12
-         }
-     ]
- },
- {
      "name": "Rutina Full Body",
      "author": "Juan Leyva",
-     "descripcion": "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+     "descripcion": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
      "exercises": [
          {
              "name": "Ejercicio bien bontio",
@@ -97,6 +89,13 @@
              "muscle": "Pechito",
              "series": 4,
              "reps": 12
+         },
+         {
+             "name": "Ejercicio bien bontio",
+             "description" : "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+             "muscle": "Pechito",
+             "series": 10,
+             "reps": 3
          },
          {
              "name": "Ejercicio bien bontio",
@@ -110,7 +109,7 @@
  {
      "name": "Rutina de hombros",
      "author": "Rodrigo Ramirez",
-     "descripcion": "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdassdasdasdasdasdasdasdasdasdasdasdasdasdasdasda",
+     "descripcion": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
      "time": 10,
      "exercises": [
          {

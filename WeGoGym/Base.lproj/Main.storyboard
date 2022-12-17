@@ -222,7 +222,7 @@ o usa las recomendadas</string>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="excerciseDetailCollectionViewCell" id="o4H-Az-vc8" customClass="ExcerciseRoutineDetailCollectionViewCell" customModule="WeGoGym" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exerciseRoutineCollectionViewCell" id="o4H-Az-vc8" customClass="ExerciseRoutineCollectionViewCell" customModule="WeGoGym" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="161" height="173"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6k5-Ol-HaK">
@@ -271,10 +271,9 @@ o usa las recomendadas</string>
                                         <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                                         <size key="customSize" width="161" height="173"/>
                                         <connections>
-                                            <outlet property="excerciseImageView" destination="59n-Gy-K09" id="ZkQ-Av-Teo"/>
-                                            <outlet property="repsLabel" destination="6hg-Qu-2nL" id="NlT-Iw-UNv"/>
-                                            <outlet property="seriesLabel" destination="4Z3-L2-6L6" id="nfa-0t-Sei"/>
-                                            <outlet property="titleLabel" destination="rdf-xO-ewk" id="sQR-QI-cAZ"/>
+                                            <outlet property="repsLabel" destination="4Z3-L2-6L6" id="5Wj-Xb-cdp"/>
+                                            <outlet property="seriesLabel" destination="6hg-Qu-2nL" id="kTm-DU-chQ"/>
+                                            <outlet property="titleLabel" destination="rdf-xO-ewk" id="5m6-aj-5Zo"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

@@ -46,7 +46,7 @@ extension RoutineDetailViewController : UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "excerciseDetailCollectionViewCell", for: indexPath) as? ExcerciseRoutineDetailCollectionViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exerciseRoutineCollectionViewCell", for: indexPath) as? ExerciseRoutineCollectionViewCell else { return UICollectionViewCell() }
         cell.setupValuesEntity(excercise: arrayExcercises[indexPath.row])
         return cell
     }
